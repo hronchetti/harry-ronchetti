@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-grey-70 h-screen text-lg font-normal;
+    /* Smoother font rendering */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  *:focus-visible {
+    @apply outline-yellow outline-2 outline;
+  }
+
+  *::-moz-focus-inner {
+    @apply p-0 border-0;
+  }
+}
+
+@layer utilities {
+  .animation-preset {
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+    backface-visibility: hidden;
+  }
+}
+
+@layer components {
+  .heading-xl {
+    @apply font-sans font-semibold text-4xl leading-tight text-grey-100 lg:text-[4rem] tracking-[-0.2em];
+  }
+  .heading-lg {
+    @apply font-sans font-semibold text-[2rem] leading-tight text-grey-100 lg:text-5xl lg:leading-tight tracking-[-0.2em];
+  }
+  .heading-md {
+    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2.5rem] tracking-[-0.2em];
+  }
+  .heading-sm {
+    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2rem] tracking-[-0.2em];
+  }
+  .heading-xs {
+    @apply font-sans font-semibold text-[1.375rem] leading-tight text-grey-100 lg:text-2xl tracking-[-0.2em];
+  }
+}
