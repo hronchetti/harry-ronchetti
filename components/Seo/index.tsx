@@ -2,21 +2,7 @@ import React from "react"
 import Head from "next/head"
 import dayjs from "dayjs"
 
-export type Seo = {
-  title: string
-  titleTemplate: {
-    extension: string
-  }
-  metaDescription: string
-  socialImage: {
-    url: string
-    fileName: string
-    height: string
-    size: string
-    title: string
-    width: string
-  }
-}
+import type { Seo as SeoType } from "@/types"
 
 export const Seo = ({
   title,
@@ -27,7 +13,7 @@ export const Seo = ({
   updatedAt,
   createdAt,
   slug,
-}: Seo & {
+}: SeoType & {
   article: boolean
   createdAt?: string
   updatedAt?: string

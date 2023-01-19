@@ -1,13 +1,13 @@
 import { getPageData } from "@/utils"
 import type { Page } from "@/types"
-import { PageSectionsHandler, Seo, HeaderLanding } from "@/components"
+import { PageSectionsHandler, Seo, Header } from "@/components"
 
 export default async function Home() {
-  const data: Page = await getPageData("1ToLlYVJrtUPYsRWxXYHJp")
+  const data: Page = await getPageData("1SRB3gvdQ0mPzwJKV1z6Hr")
 
   return (
     <>
-      <HeaderLanding
+      <Header
         heading={data.page.header.heading}
         description={data.page.header.description}
         variant={data.page.header.variant}
@@ -18,7 +18,7 @@ export default async function Home() {
         metaDescription={data.page.seo.description}
         titleTemplate={data.page.seo.titleExtension}
         article={false}
-        slug="/"
+        slug="/case-studies"
       />
     </>
   )
