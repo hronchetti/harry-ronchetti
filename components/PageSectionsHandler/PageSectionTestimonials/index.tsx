@@ -7,7 +7,7 @@ export const PageSectionTestimonials = ({
     <section
       className={backgroundColour === "grey-10" ? "bg-grey-10" : "bg-white"}
     >
-      <div className="wrapper-width">PageSectionTestimonials</div>
+      <div className="wrapper-x">PageSectionTestimonials</div>
     </section>
   )
 }

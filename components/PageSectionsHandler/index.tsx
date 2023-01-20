@@ -20,11 +20,12 @@ type Props = {
 }
 
 export const PageSectionsHandler = ({ sections }: Props) => {
+  const isEven = (number: number) => number % 2 === 0
   let backgroundColours: string[] = []
 
   return (
     <main>
-      {sections.map((section) => {
+      {sections.map((section, index) => {
         const id = section.sys.id
         backgroundColours.push(section.backgroundColour)
 
@@ -36,6 +37,11 @@ export const PageSectionsHandler = ({ sections }: Props) => {
             backgroundColour={section.backgroundColour}
             heading={section.heading}
             accordionsCollection={section.accordionsCollection}
+            orientation={isEven(index) ? "text-right" : "text-left"}
+            paddingBottom={
+              backgroundColours[index - 1] !== section.backgroundColour ||
+              index === 0
+            }
           />
         ) : section.__typename === "PageSectionsCaseStudies" ? (
           <PageSectionCaseStudies

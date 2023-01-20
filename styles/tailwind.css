@@ -36,8 +36,17 @@
     perspective: 1000px;
     backface-visibility: hidden;
   }
-  .wrapper-width {
+  .wrapper-x {
     @apply px-6 md:px-12 xl:px-24 max-w-[1440px] mx-auto;
+  }
+  .wrapper-y {
+    @apply py-20 lg:py-[7.5rem];
+  }
+  .wrapper-t {
+    @apply pt-20 lg:pt-[7.5rem];
+  }
+  .wrapper-b {
+    @apply pb-20 lg:pb-[7.5rem];
   }
 }
 

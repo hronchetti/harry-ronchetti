@@ -1,5 +1,5 @@
 export const Footer = () => (
-  <footer className="wrapper-width text-grey-60">
+  <footer className="wrapper-x text-grey-60">
     <div>
       <span>
         &copy; {new Date().getFullYear()} Harry Ronchetti Consulting Ltd
