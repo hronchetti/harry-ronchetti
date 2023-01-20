@@ -23,6 +23,9 @@ module.exports = {
         "grey-10": "#F8FAFC",
         yellow: "#FAC515",
       },
+      transitionDuration: {
+        600: "600ms",
+      },
     },
   },
   plugins: [],

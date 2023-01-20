@@ -20,16 +20,20 @@ type Props = {
 }
 
 export const PageSectionsHandler = ({ sections }: Props) => {
+  let backgroundColours: string[] = []
+
   return (
     <main>
       {sections.map((section) => {
         const id = section.sys.id
+        backgroundColours.push(section.backgroundColour)
 
         return section.__typename === "PageSectionsAccordions" ? (
           <PageSectionAccordions
             key={id}
             sys={section.sys}
             __typename={section.__typename}
+            backgroundColour={section.backgroundColour}
             heading={section.heading}
             accordionsCollection={section.accordionsCollection}
           />
@@ -38,6 +42,7 @@ export const PageSectionsHandler = ({ sections }: Props) => {
             key={id}
             sys={section.sys}
             __typename={section.__typename}
+            backgroundColour={section.backgroundColour}
             caseStudiesCollection={section.caseStudiesCollection}
           />
         ) : section.__typename === "PageSectionsStrap" ? (
@@ -45,6 +50,7 @@ export const PageSectionsHandler = ({ sections }: Props) => {
             key={id}
             sys={section.sys}
             __typename={section.__typename}
+            backgroundColour={section.backgroundColour}
             preHeading={section.preHeading}
             heading={section.heading}
             description={section.description}
@@ -55,6 +61,7 @@ export const PageSectionsHandler = ({ sections }: Props) => {
             key={id}
             sys={section.sys}
             __typename={section.__typename}
+            backgroundColour={section.backgroundColour}
             heading={section.heading}
             testimonialsCollection={section.testimonialsCollection}
           />

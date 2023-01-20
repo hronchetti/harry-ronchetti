@@ -39,6 +39,7 @@ export async function getPageData(pageId: string, preview = false) {
                   id
                 }
                 heading
+                backgroundColour
                 accordionsCollection(limit: 10) {
                   items {
                     sys {
@@ -56,6 +57,7 @@ export async function getPageData(pageId: string, preview = false) {
                 sys {
                   id
                 }
+                backgroundColour
                 caseStudiesCollection(limit: 10) {
                   items {
                     sys {
@@ -90,6 +92,7 @@ export async function getPageData(pageId: string, preview = false) {
                 sys {
                   id
                 }
+                backgroundColour
                 preHeading
                 heading
                 description
@@ -100,6 +103,7 @@ export async function getPageData(pageId: string, preview = false) {
                 sys {
                   id
                 }
+                backgroundColour
                 heading
                 testimonialsCollection(limit: 5) {
                   items {

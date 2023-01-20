@@ -112,6 +112,7 @@ export type PageSectionsAccordions = {
     id: string
   }
   heading: string
+  backgroundColour: "white" | "grey-10"
   accordionsCollection: {
     items: Accordion[]
   }
@@ -122,6 +123,7 @@ export type PageSectionsCaseStudies = {
   sys: {
     id: string
   }
+  backgroundColour: "white" | "grey-10"
   caseStudiesCollection: {
     items: CaseStudy[]
   }
@@ -132,10 +134,11 @@ export type PageSectionsStrap = {
   sys: {
     id: string
   }
+  backgroundColour: "grey-90"
   preHeading: string
   heading: string
   description: string
-  button: "Book cal"
+  button: "Book call"
 }
 
 export type PageSectionsTestimonials = {
@@ -144,6 +147,7 @@ export type PageSectionsTestimonials = {
     id: string
   }
   heading: string
+  backgroundColour: "white" | "grey-10"
   testimonialsCollection: {
     items: Testimonial[]
   }

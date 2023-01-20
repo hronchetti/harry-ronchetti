@@ -1,6 +1,7 @@
-import "../styles/tailwind.css"
+import { Footer } from "@/components"
 
-import { Nav, Footer } from "@/components"
+import "../styles/tailwind.css"
+import "../styles/icons.css"
 
 export default function RootLayout({
   children,
@@ -15,7 +16,6 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Nav />
         {children}
         <Footer />
       </body>
