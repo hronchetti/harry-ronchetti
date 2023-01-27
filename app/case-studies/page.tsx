@@ -14,13 +14,6 @@ export default async function Home() {
         variant={data.page.header.variant}
       />
       <PageSectionsHandler sections={data.page.sectionsCollection.items} />
-      <Seo
-        title={data.page.seo.title}
-        metaDescription={data.page.seo.description}
-        titleTemplate={data.page.seo.titleExtension}
-        article={false}
-        slug="/case-studies"
-      />
     </>
   )
 }
