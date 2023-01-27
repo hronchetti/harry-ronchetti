@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{html,js,tsx}",
-    "./components/**/*.{html,js,tsx}",
-    "./app/**/*.{html,js,tsx}",
-  ],
+  content: ["./components/**/*.{html,js,tsx}", "./app/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+      },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
@@ -25,6 +29,11 @@ module.exports = {
       },
       transitionDuration: {
         600: "600ms",
+      },
+      borderRadius: {
+        16: "4rem",
+        20: "5rem",
+        30: "7.5rem",
       },
     },
   },

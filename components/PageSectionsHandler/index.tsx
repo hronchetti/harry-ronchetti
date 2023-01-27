@@ -17,9 +17,13 @@ type Props = {
     PageSectionsStrap,
     PageSectionsTestimonials
   ]
+  firstSectionRounded?: boolean
 }
 
-export const PageSectionsHandler = ({ sections }: Props) => {
+export const PageSectionsHandler = ({
+  sections,
+  firstSectionRounded = true,
+}: Props) => {
   const isEven = (number: number) => number % 2 === 0
   let backgroundColours: string[] = []
 
@@ -42,6 +46,8 @@ export const PageSectionsHandler = ({ sections }: Props) => {
               backgroundColours[index - 1] !== section.backgroundColour ||
               index === 0
             }
+            variant={section.variant}
+            roundedTop={firstSectionRounded && index !== 0}
           />
         ) : section.__typename === "PageSectionsCaseStudies" ? (
           <PageSectionCaseStudies

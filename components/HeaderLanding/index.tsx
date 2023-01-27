@@ -1,10 +1,11 @@
 import type { PageSectionsHeader } from "@/types"
-import { Button } from "@/components"
+import { Button, LogoCloud } from "@/components"
+import { HeaderLandingSlider } from "./HeaderLandingSlider"
 
 export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
   return (
     <header className="w-full text-center">
-      <div className="pt-6 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-16">
+      <div className="pt-6 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-16 wrapper-x">
         <h1 className="max-w-screen-lg mx-auto text-grey-100 heading-xl">
           {heading}
         </h1>
@@ -30,6 +31,13 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
           <Button style="text" href="/case-studies">
             Case studies
           </Button>
+        </div>
+      </div>
+      <div className="relative">
+        <span className="absolute top-0 left-0 w-full h-full bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />
+        <div className="wrapper-x">
+          <HeaderLandingSlider />
+          <LogoCloud variant="Landing" />
         </div>
       </div>
     </header>

@@ -50,13 +50,14 @@ export type Accordion = {
     id: string
   }
   heading: string
+  emoji?: string
   content: {
     json: Document
   }
 }
 
 export type Client = {
-  name
+  name: string
 }
 
 export type ClientPersonel = {
@@ -103,7 +104,7 @@ export type CaseStudy = {
 export type PageSectionsHeader = {
   heading: string
   description?: string
-  variant: "Landing" | "Case studies"
+  variant: "Landing" | "Case Studies"
 }
 
 export type PageSectionsAccordions = {
@@ -112,6 +113,7 @@ export type PageSectionsAccordions = {
     id: string
   }
   heading: string
+  variant: "Video Ask" | "Tools"
   backgroundColour: "white" | "grey-10"
   accordionsCollection: {
     items: Accordion[]

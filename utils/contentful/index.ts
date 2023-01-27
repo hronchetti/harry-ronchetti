@@ -40,11 +40,13 @@ export async function getPageData(pageId: string, preview = false) {
                 }
                 heading
                 backgroundColour
+                variant
                 accordionsCollection(limit: 10) {
                   items {
                     sys {
                       id
                     }
+                    emoji
                     heading
                     content {
                       json

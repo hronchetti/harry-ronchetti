@@ -17,7 +17,7 @@ export const Button = ({
   variant,
 }: Button) => {
   const hoverEffect =
-    "before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/4 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-600 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[150%] before:rotate-[35deg]"
+    "before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/4 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-700 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[150%] before:rotate-[35deg]"
 
   const styles =
     style === "grey-100"
