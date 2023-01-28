@@ -1,6 +1,6 @@
 import { getPageData } from "@/utils"
 import type { Page } from "@/types"
-import { PageSectionsHandler, Seo, Header, Nav } from "@/components"
+import { PageSectionsHandler, Header, Nav } from "@/components"
 
 export default async function Home() {
   const data: Page = await getPageData("1SRB3gvdQ0mPzwJKV1z6Hr")

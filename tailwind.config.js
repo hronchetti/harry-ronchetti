@@ -35,6 +35,9 @@ module.exports = {
         20: "5rem",
         30: "7.5rem",
       },
+      padding: {
+        30: "7.5rem",
+      },
     },
   },
   plugins: [],
