@@ -37,7 +37,7 @@ export const PageSectionAccordions = ({
           }`}
         >
           <div>
-            <h2 className="mb-6 heading-md text-grey-100 lg:mb-8">{heading}</h2>
+            <h2 className="mb-6 heading-sm text-grey-100 lg:mb-8">{heading}</h2>
             <div>
               {accordionsCollection.items.map((item, index) => (
                 <Accordion
@@ -61,7 +61,7 @@ export const PageSectionAccordions = ({
         >
           <div>{content}</div>
           <div>
-            <h2 className="mb-6 heading-md text-grey-100 lg:mb-8">{heading}</h2>
+            <h2 className="mb-6 heading-sm text-grey-100 lg:mb-8">{heading}</h2>
             <div>
               {accordionsCollection.items.map((item, index) => (
                 <Accordion

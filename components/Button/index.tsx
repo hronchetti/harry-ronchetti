@@ -24,7 +24,7 @@ export const Button = ({
       ? "bg-grey-100 text-white border-grey-100 font-semibold drop-shadow-md overflow-hidden relative before:bg-white " +
         hoverEffect
       : style === "white"
-      ? "bg-white text-grey-90 border-white font-semibold drop-shadow-md before:bg-grey-40 " +
+      ? "bg-white text-grey-90 border-white font-semibold drop-shadow-md overflow-hidden relative before:bg-grey-50 " +
         hoverEffect
       : style === "outline"
       ? "text-grey-60 border-grey-30 font-medium overflow-hidden relative before:bg-grey-40 " +

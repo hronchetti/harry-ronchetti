@@ -5,7 +5,7 @@ export const PageSectionCaseStudies = ({
 }: PageSectionsCaseStudies) => {
   return (
     <section
-      className={backgroundColour === "grey-10" ? "bg-grey-10" : "bg-white"}
+      className={backgroundColour === "grey-10" ? "bg-grey-10" : "bg-none"}
     >
       <div className="wrapper-x">PageSectionCaseStudies</div>
     </section>

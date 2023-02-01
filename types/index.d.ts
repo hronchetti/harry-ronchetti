@@ -11,6 +11,7 @@ export type Page = {
       items: [
         PageSectionsAccordions,
         PageSectionsCaseStudies,
+        PageSectionsFullWidthImage,
         PageSectionsStrap,
         PageSectionsTestimonials
       ]
@@ -129,6 +130,17 @@ export type PageSectionsCaseStudies = {
   caseStudiesCollection: {
     items: CaseStudy[]
   }
+}
+
+export type PageSectionsFullWidthImage = {
+  __typename: "PageSectionsFullWidthImage"
+  sys: {
+    id: string
+  }
+  heading: string
+  description: string
+  backgroundColour: "white" | "grey-10"
+  image: MediaAsset
 }
 
 export type PageSectionsStrap = {

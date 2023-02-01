@@ -89,6 +89,22 @@ export async function getPageData(pageId: string, preview = false) {
                   }
                 }
               }
+              ... on PageSectionsFullWidthImage {
+                __typename
+                sys {
+                  id
+                }
+                heading
+                description
+                backgroundColour
+                image {
+                  height
+                  size
+                  title
+                  url
+                  width
+                }
+              }
               ... on PageSectionsStrap {
                 __typename
                 sys {
