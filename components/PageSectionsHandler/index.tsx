@@ -30,9 +30,8 @@ export const PageSectionsHandler = ({
   const isEven = (number: number) => number % 2 === 0
   let backgroundColours: string[] = []
 
-  console.log(sections)
   return (
-    <main>
+    <main className="w-full overflow-hidden">
       {sections.map((section, index) => {
         const id = section.sys.id
         backgroundColours.push(section.backgroundColour)

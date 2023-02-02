@@ -16,7 +16,7 @@ export const PageSectionStrap = ({
       }
     >
       <div className="px-6 py-20 text-center lg:px-20">
-        <span className="pre-heading">{preHeading}</span>
+        <span className="block pre-heading text-yellow">{preHeading}</span>
         <h2 className="my-6 text-white heading-md">{heading}</h2>
         <p className="mb-6 lg:mb-10">{description}</p>
         <Button
