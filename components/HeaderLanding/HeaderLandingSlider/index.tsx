@@ -10,9 +10,9 @@ import Reclaro135s from "@/lib/images/landing-page-slider/reclaro-1-3-5s-tall.jp
 import WilderBuilder from "@/lib/images/landing-page-slider/wilder-trips-builder-tall.jpg"
 
 export const HeaderLandingSlider = () => {
+  const indicatorSlide0 = React.useRef<HTMLSpanElement | null>(null)
   const indicatorSlide1 = React.useRef<HTMLSpanElement | null>(null)
   const indicatorSlide2 = React.useRef<HTMLSpanElement | null>(null)
-  const indicatorSlide3 = React.useRef<HTMLSpanElement | null>(null)
   const [activeSlide, setActiveSlide] = React.useState(0)
 
   const onAutoplayTimeLeft = (
@@ -22,21 +22,21 @@ export const HeaderLandingSlider = () => {
   ) => {
     //console.log(s, time, progress)
     if (activeSlide === 0) {
-      const indicatorElement = indicatorSlide1.current
+      const indicatorElement = indicatorSlide0.current
 
       if (indicatorElement) {
         updateIndicator(indicatorElement, percentage)
       }
     }
     if (activeSlide === 1) {
-      const indicatorElement = indicatorSlide2.current
+      const indicatorElement = indicatorSlide1.current
 
       if (indicatorElement) {
         updateIndicator(indicatorElement, percentage)
       }
     }
     if (activeSlide === 2) {
-      const indicatorElement = indicatorSlide3.current
+      const indicatorElement = indicatorSlide2.current
 
       if (indicatorElement) {
         updateIndicator(indicatorElement, percentage)
@@ -93,6 +93,12 @@ export const HeaderLandingSlider = () => {
       <div className="flex justify-center mt-10 lg:mt-14">
         <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
           <span
+            ref={indicatorSlide0}
+            className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
+          />
+        </div>
+        <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
+          <span
             ref={indicatorSlide1}
             className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
           />
@@ -100,12 +106,6 @@ export const HeaderLandingSlider = () => {
         <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
           <span
             ref={indicatorSlide2}
-            className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
-          />
-        </div>
-        <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
-          <span
-            ref={indicatorSlide3}
             className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
           />
         </div>

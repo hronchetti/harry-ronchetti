@@ -30,6 +30,18 @@ module.exports = {
       transitionDuration: {
         600: "600ms",
       },
+      transitionDelay: {
+        150: "150ms",
+        300: "300ms",
+        450: "450ms",
+        600: "600ms",
+        750: "750ms",
+        900: "900ms",
+        1050: "1050ms",
+        1200: "1200ms",
+        1350: "1350ms",
+        1500: "1500ms",
+      },
       borderRadius: {
         8: "2rem",
         16: "4rem",
