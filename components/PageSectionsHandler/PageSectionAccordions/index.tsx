@@ -1,5 +1,7 @@
 import { PageSectionsAccordions } from "@/types"
+
 import { Accordion } from "./Accordion"
+import { ToolsSection } from "./ToolsSection"
 
 export const PageSectionAccordions = ({
   backgroundColour,
@@ -18,7 +20,7 @@ export const PageSectionAccordions = ({
     variant === "Video Ask" ? (
       <>Video Ask</>
     ) : variant === "Tools" ? (
-      <>Tools</>
+      <ToolsSection />
     ) : (
       <></>
     )
@@ -32,11 +34,11 @@ export const PageSectionAccordions = ({
     >
       {orientation === "text-left" ? (
         <div
-          className={`wrapper-x lg:grid lg:grid-cols-2 lg:gap-24 ${
+          className={`wrapper-x grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 ${
             paddingBottom ? "wrapper-y" : "wrapper-t"
           }`}
         >
-          <div>
+          <div className="order-2 lg:order-1">
             <h2 className="mb-6 heading-sm text-grey-100 lg:mb-8">{heading}</h2>
             <div>
               {accordionsCollection.items.map((item, index) => (
@@ -51,11 +53,11 @@ export const PageSectionAccordions = ({
               ))}
             </div>
           </div>
-          <div>{content}</div>
+          <div className="order-1 lg:order-2">{content}</div>
         </div>
       ) : (
         <div
-          className={`wrapper-x lg:grid lg:grid-cols-2 lg:gap-24 ${
+          className={`wrapper-x grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24 ${
             paddingBottom ? "wrapper-y" : "wrapper-t"
           }`}
         >

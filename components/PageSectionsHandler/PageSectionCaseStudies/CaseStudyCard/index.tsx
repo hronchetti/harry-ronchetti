@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import { CaseStudy } from "@/types"
 
-import { Tags, LinkArrow } from "@/components"
+import { Tags } from "@/components"
 
 export const CaseStudyCard = ({
   client,

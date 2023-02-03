@@ -1,7 +1,8 @@
-import { Footer } from "@/components"
-
-import "../styles/tailwind.css"
+import "../styles/swiper.css"
 import "../styles/icons.css"
+import "../styles/tailwind.css"
+
+import { Footer } from "@/components"
 
 export default function RootLayout({
   children,
