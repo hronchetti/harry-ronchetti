@@ -1,6 +1,7 @@
 import "../styles/swiper.css"
 import "../styles/icons.css"
 import "../styles/tailwind.css"
+import "../styles/wiggle.css"
 
 import { Footer } from "@/components"
 

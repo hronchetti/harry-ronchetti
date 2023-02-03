@@ -58,7 +58,7 @@
 
 @layer components {
   .heading-xl {
-    @apply font-sans font-semibold text-4xl leading-tight text-grey-100 lg:text-[4rem] tracking-[-0.02em];
+    @apply font-sans font-semibold text-4xl leading-tight text-grey-100 md:text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em];
   }
   .heading-lg {
     @apply font-sans font-semibold text-[2rem] leading-tight text-grey-100 lg:text-[2.5rem] xl:text-5xl xl:leading-tight tracking-[-0.02em];

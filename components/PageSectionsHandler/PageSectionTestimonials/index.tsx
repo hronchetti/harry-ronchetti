@@ -94,13 +94,13 @@ export const PageSectionTestimonials = ({
                 <div className="grid grid-cols-2 gap-4 pt-8 md:pt-0">
                   <button
                     ref={navigationPrevRef}
-                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:left-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 md:disabled:hover:bg-white"
+                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:left-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 disabled:invisible disabled:pointer-events-none"
                   >
                     <span className="block icon-chevron-left text-[2rem] leading-8 text-grey-50" />
                   </button>
                   <button
                     ref={navigationNextRef}
-                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:right-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 md:disabled:hover:bg-white"
+                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:right-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 disabled:invisible disabled:pointer-events-none"
                   >
                     <span className="block icon-chevron-right text-[2rem] leading-8 text-grey-50" />
                   </button>
