@@ -34,7 +34,7 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
         </div>
       </div>
       <div className="relative">
-        <span className="absolute top-0 left-0 w-full h-full bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />
+        <span className="absolute top-[6rem] left-0 w-full h-[calc(100%-6rem)] bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />
         <div className="wrapper-x">
           <HeaderLandingSlider />
           <LogoCloud variant="Landing" />

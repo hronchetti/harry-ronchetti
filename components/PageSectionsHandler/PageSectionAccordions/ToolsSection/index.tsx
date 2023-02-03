@@ -15,7 +15,7 @@ import MiroLogo from "@/lib/logos/tools/miro-logo.svg"
 import MixPanelLogo from "@/lib/logos/tools/mixpanel-logo.svg"
 
 export const ToolsSection = () => (
-  <div className="relative">
+  <div className="relative pointer-events-none">
     <div className="lg:relative max-w-[30rem] lg:max-w-[calc(100%-6rem)] lg:mx-auto absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[calc(100%+3rem)] lg:translate-x-0 lg:translate-y-0 lg:left-0 lg:top-0">
       <div>
         <BlobGrey />
