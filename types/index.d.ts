@@ -65,7 +65,7 @@ export type ClientPersonel = {
   name: string
   jobTitle: string
   photo: MediaAsset
-  linkedInProfile: string
+  linkedInProfile?: string
   company: Client
 }
 
@@ -114,6 +114,7 @@ export type PageSectionsAccordions = {
     id: string
   }
   heading: string
+  headingHighlight?: string
   variant: "Video Ask" | "Tools"
   backgroundColour: "white" | "grey-10"
   accordionsCollection: {
@@ -138,6 +139,7 @@ export type PageSectionsFullWidthImage = {
     id: string
   }
   heading: string
+  headingHighlight?: string
   description: string
   backgroundColour: "white" | "grey-10"
   image: MediaAsset
@@ -161,6 +163,7 @@ export type PageSectionsTestimonials = {
     id: string
   }
   heading: string
+  headingHighlight?: string
   backgroundColour: "white" | "grey-10"
   testimonialsCollection: {
     items: Testimonial[]

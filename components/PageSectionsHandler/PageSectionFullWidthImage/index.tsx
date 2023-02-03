@@ -4,9 +4,11 @@ import TrackVisibility from "react-on-screen"
 import Image from "next/image"
 
 import { PageSectionsFullWidthImage } from "@/types"
+import { HeadingWithHighlight } from "@/components"
 
 export const PageSectionFullWidthImage = ({
   heading,
+  headingHighlight,
   description,
   image,
   backgroundColour,
@@ -32,7 +34,11 @@ export const PageSectionFullWidthImage = ({
                 : "translate-y-6 opacity-0"
             }`}
           >
-            {heading}
+            <HeadingWithHighlight
+              heading={heading}
+              headingHighlight={headingHighlight}
+              variant="heading-md"
+            />
           </h2>
           {description && (
             <p

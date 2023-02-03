@@ -4,12 +4,14 @@ import TrackVisibility from "react-on-screen"
 
 import { PageSectionsAccordions } from "@/types"
 
+import { HeadingWithHighlight } from "@/components"
 import { Accordion } from "./Accordion"
 import { ToolsSection } from "./ToolsSection"
 
 export const PageSectionAccordions = ({
   backgroundColour,
   heading,
+  headingHighlight,
   accordionsCollection,
   orientation,
   paddingBottom,
@@ -47,7 +49,7 @@ export const PageSectionAccordions = ({
                 paddingBottom ? "wrapper-y" : "wrapper-t"
               }`}
             >
-              <div className="order-2 lg:order-1">
+              <div>
                 <h2
                   className={`mb-6 heading-sm text-grey-100 lg:mb-8 will-change-transform transition-all duration-300 ease-out delay-150 ${
                     isVisible
@@ -55,7 +57,11 @@ export const PageSectionAccordions = ({
                       : "translate-y-6 opacity-0"
                   }`}
                 >
-                  {heading}
+                  <HeadingWithHighlight
+                    heading={heading}
+                    headingHighlight={headingHighlight}
+                    variant="heading-sm"
+                  />
                 </h2>
                 <div
                   className={`will-change-transform transition-all duration-300 ease-out delay-300 ${
@@ -78,7 +84,7 @@ export const PageSectionAccordions = ({
                   ))}
                 </div>
               </div>
-              <div className="order-1 lg:order-2">{content}</div>
+              <div>{content}</div>
             </div>
           ) : (
             <div
@@ -86,8 +92,8 @@ export const PageSectionAccordions = ({
                 paddingBottom ? "wrapper-y" : "wrapper-t"
               }`}
             >
-              <div>{content}</div>
-              <div>
+              <div className="order-2 lg:order-1">{content}</div>
+              <div className="order-1 lg:order-2">
                 <h2
                   className={`mb-6 heading-sm text-grey-100 lg:mb-8 will-change-transform transition-all duration-300 ease-out delay-150 ${
                     isVisible
@@ -95,7 +101,11 @@ export const PageSectionAccordions = ({
                       : "translate-y-6 opacity-0"
                   }`}
                 >
-                  {heading}
+                  <HeadingWithHighlight
+                    heading={heading}
+                    headingHighlight={headingHighlight}
+                    variant="heading-sm"
+                  />
                 </h2>
                 <div
                   className={`will-change-transform transition-all duration-300 ease-out delay-300 ${

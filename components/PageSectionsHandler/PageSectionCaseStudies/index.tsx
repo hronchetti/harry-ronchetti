@@ -10,7 +10,7 @@ export const PageSectionCaseStudies = ({
     <section
       className={backgroundColour === "grey-10" ? "bg-grey-10" : "bg-none"}
     >
-      <div className="mt-12 wrapper-x lg:mt-0">
+      <div className="grid grid-cols-1 gap-8 mt-12 wrapper-x lg:mt-0 lg:gap-12">
         {caseStudiesCollection.items.map((caseStudy) => (
           <CaseStudyCard
             key={caseStudy.sys.id}

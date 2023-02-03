@@ -64,7 +64,7 @@
     @apply font-sans font-semibold text-[2rem] leading-tight text-grey-100 lg:text-[2.5rem] xl:text-5xl xl:leading-tight tracking-[-0.02em];
   }
   .heading-md {
-    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2.5rem] tracking-[-0.02em];
+    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2.5rem] lg:leading-[3rem] tracking-[-0.02em];
   }
   .heading-sm {
     @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2rem] tracking-[-0.02em];

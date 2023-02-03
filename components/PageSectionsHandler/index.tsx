@@ -43,6 +43,7 @@ export const PageSectionsHandler = ({
             __typename={section.__typename}
             backgroundColour={section.backgroundColour}
             heading={section.heading}
+            headingHighlight={section.headingHighlight}
             accordionsCollection={section.accordionsCollection}
             orientation={isEven(index) ? "text-right" : "text-left"}
             paddingBottom={
@@ -67,6 +68,7 @@ export const PageSectionsHandler = ({
             __typename={section.__typename}
             backgroundColour={section.backgroundColour}
             heading={section.heading}
+            headingHighlight={section.headingHighlight}
             description={section.description}
             image={section.image}
             paddingBottom={
@@ -92,6 +94,7 @@ export const PageSectionsHandler = ({
             __typename={section.__typename}
             backgroundColour={section.backgroundColour}
             heading={section.heading}
+            headingHighlight={section.headingHighlight}
             testimonialsCollection={section.testimonialsCollection}
           />
         ) : (

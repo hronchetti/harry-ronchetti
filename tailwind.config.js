@@ -43,6 +43,7 @@ module.exports = {
         1500: "1500ms",
       },
       borderRadius: {
+        5: "1.25rem",
         8: "2rem",
         16: "4rem",
         20: "5rem",

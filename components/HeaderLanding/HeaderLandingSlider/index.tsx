@@ -8,11 +8,15 @@ import Image from "next/image"
 import PFNexusIntroductions from "@/lib/images/landing-page-slider/pf-nexus-introductions-tall.jpg"
 import Reclaro135s from "@/lib/images/landing-page-slider/reclaro-1-3-5s-tall.jpg"
 import WilderBuilder from "@/lib/images/landing-page-slider/wilder-trips-builder-tall.jpg"
+import HomeAssistCheckout from "@/lib/images/landing-page-slider/home-assist-order-tall.jpg"
+import NudoSushiProduct from "@/lib/images/landing-page-slider/nudo-sushi-product-tall.jpg"
 
 export const HeaderLandingSlider = () => {
   const indicatorSlide0 = React.useRef<HTMLSpanElement | null>(null)
   const indicatorSlide1 = React.useRef<HTMLSpanElement | null>(null)
   const indicatorSlide2 = React.useRef<HTMLSpanElement | null>(null)
+  const indicatorSlide3 = React.useRef<HTMLSpanElement | null>(null)
+  const indicatorSlide4 = React.useRef<HTMLSpanElement | null>(null)
   const [activeSlide, setActiveSlide] = React.useState(0)
 
   const onAutoplayTimeLeft = (
@@ -42,6 +46,20 @@ export const HeaderLandingSlider = () => {
         updateIndicator(indicatorElement, percentage)
       }
     }
+    if (activeSlide === 3) {
+      const indicatorElement = indicatorSlide3.current
+
+      if (indicatorElement) {
+        updateIndicator(indicatorElement, percentage)
+      }
+    }
+    if (activeSlide === 4) {
+      const indicatorElement = indicatorSlide4.current
+
+      if (indicatorElement) {
+        updateIndicator(indicatorElement, percentage)
+      }
+    }
   }
 
   const updateIndicator = (element: HTMLSpanElement, percentage: number) => {
@@ -56,7 +74,7 @@ export const HeaderLandingSlider = () => {
         spaceBetween={16}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -89,6 +107,20 @@ export const HeaderLandingSlider = () => {
             placeholder="blur"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src={HomeAssistCheckout}
+            alt="Home Assist Boiler Installation Checkout"
+            placeholder="blur"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src={NudoSushiProduct}
+            alt="Nudo Sushi Product Viewer"
+            placeholder="blur"
+          />
+        </SwiperSlide>
       </Swiper>
       <div className="flex justify-center mt-10 lg:mt-14">
         <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
@@ -106,6 +138,18 @@ export const HeaderLandingSlider = () => {
         <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
           <span
             ref={indicatorSlide2}
+            className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
+          />
+        </div>
+        <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
+          <span
+            ref={indicatorSlide3}
+            className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
+          />
+        </div>
+        <div className="w-12 h-1.5 rounded-8 bg-grey-40 overflow-hidden mx-1.5">
+          <span
+            ref={indicatorSlide4}
             className="block w-full h-full -translate-x-full bg-white will-change-transform rounded-8"
           />
         </div>

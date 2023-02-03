@@ -8,6 +8,7 @@ import TrackVisibility from "react-on-screen"
 import { PageSectionsTestimonials } from "@/types"
 
 import { Testimonial } from "./Testimonial"
+import { HeadingWithHighlight } from "@/components"
 
 import Blob from "@/lib/blob.svg"
 
@@ -15,6 +16,7 @@ SwiperCore.use([Pagination, Navigation])
 
 export const PageSectionTestimonials = ({
   heading,
+  headingHighlight,
   backgroundColour,
   testimonialsCollection,
 }: PageSectionsTestimonials) => {
@@ -47,7 +49,11 @@ export const PageSectionTestimonials = ({
                     : "translate-y-6 opacity-0"
                 }`}
               >
-                {heading}
+                <HeadingWithHighlight
+                  heading={heading}
+                  headingHighlight={headingHighlight}
+                  variant="heading-md"
+                />
               </h2>
               <div
                 className={`relative will-change-transform transition-all duration-300 ease-out delay-300 ${

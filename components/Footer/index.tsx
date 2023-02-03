@@ -49,11 +49,11 @@ export const Footer = () => (
       <li>
         <a
           className="block text-grey-60 hover:text-grey-90"
-          href="https://www.instagram.com/ux.freelancer/"
+          href="https://medium.com/@harryronchetti"
           target="_blank"
           rel="noreferrer"
         >
-          <span className="icon-instagram block leading-7 text-[1.75rem] lg:text-2xl lg:leading-6 p-3 lg:p-0 lg:mx-3" />
+          <span className="icon-medium block leading-7 text-[1.75rem] lg:text-2xl lg:leading-6 p-3 lg:p-0 lg:mx-3" />
         </a>
       </li>
     </ul>

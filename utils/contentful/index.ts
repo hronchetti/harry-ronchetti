@@ -39,6 +39,7 @@ export async function getPageData(pageId: string, preview = false) {
                   id
                 }
                 heading
+                headingHighlight
                 backgroundColour
                 variant
                 accordionsCollection(limit: 10) {
@@ -95,6 +96,7 @@ export async function getPageData(pageId: string, preview = false) {
                   id
                 }
                 heading
+                headingHighlight
                 description
                 backgroundColour
                 image {
@@ -123,7 +125,8 @@ export async function getPageData(pageId: string, preview = false) {
                 }
                 backgroundColour
                 heading
-                testimonialsCollection(limit: 5) {
+                headingHighlight
+                testimonialsCollection(limit: 6) {
                   items {
                     sys {
                       id
