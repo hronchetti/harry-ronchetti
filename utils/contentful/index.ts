@@ -126,7 +126,7 @@ export async function getPageData(pageId: string, preview = false) {
                 backgroundColour
                 heading
                 headingHighlight
-                testimonialsCollection(limit: 6) {
+                testimonialsCollection(limit: 10) {
                   items {
                     sys {
                       id
