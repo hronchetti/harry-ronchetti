@@ -61,6 +61,7 @@ export const PageSectionAccordions = ({
                     heading={heading}
                     headingHighlight={headingHighlight}
                     variant="heading-sm"
+                    isVisible={isVisible}
                   />
                 </h2>
                 <div
@@ -105,6 +106,7 @@ export const PageSectionAccordions = ({
                     heading={heading}
                     headingHighlight={headingHighlight}
                     variant="heading-sm"
+                    isVisible={isVisible}
                   />
                 </h2>
                 <div

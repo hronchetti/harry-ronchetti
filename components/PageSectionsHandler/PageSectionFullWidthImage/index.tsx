@@ -38,6 +38,7 @@ export const PageSectionFullWidthImage = ({
               heading={heading}
               headingHighlight={headingHighlight}
               variant="heading-md"
+              isVisible={isVisible}
             />
           </h2>
           {description && (

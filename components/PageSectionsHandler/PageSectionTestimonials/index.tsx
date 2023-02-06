@@ -53,6 +53,7 @@ export const PageSectionTestimonials = ({
                   heading={heading}
                   headingHighlight={headingHighlight}
                   variant="heading-md"
+                  isVisible={isVisible}
                 />
               </h2>
               <div

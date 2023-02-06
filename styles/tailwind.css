@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply h-screen text-lg font-normal text-grey-70;
+    @apply h-screen font-sans text-lg font-normal text-grey-70;
     /* Smoother font rendering */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

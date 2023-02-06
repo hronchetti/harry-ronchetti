@@ -40,12 +40,12 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
           fill="none"
           viewBox="0 0 484 361"
         >
-          <g clip-path="url(#a)">
+          <g clipPath="url(#a)">
             <path
               stroke="#FAC515"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="120"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="120"
               d="M0 61c52.875 0 52.875 240 105.75 240S158.625 61 211.5 61s52.875 240 105.75 240S423 61 423 61"
             />
           </g>
