@@ -9,8 +9,9 @@ import { Footer } from "@/components"
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
   weight: ["400", "500", "600"],
-  display: "optional",
+  display: "fallback",
 })
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={inter.variable}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
