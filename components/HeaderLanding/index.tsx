@@ -35,6 +35,27 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
           </div>
         </div>
         <svg
+          className="absolute left-0 top-9 w-[484px] z-[-1] hidden lg:block wiggle"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 484 361"
+        >
+          <g clip-path="url(#a)">
+            <path
+              stroke="#FAC515"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="120"
+              d="M0 61c52.875 0 52.875 240 105.75 240S158.625 61 211.5 61s52.875 240 105.75 240S423 61 423 61"
+            />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h484v361H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+        {/* <svg
           className="absolute left-[-484px] top-9 w-[968px] z-[-1] hidden lg:block wiggle"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -47,7 +68,7 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
             stroke-width="120"
             d="M61 61s52.875 240 105.75 240S219.625 61 272.5 61s52.875 240 105.75 240S431.125 61 484 61s52.875 240 105.75 240S642.625 61 695.5 61s52.875 240 105.75 240S907 61 907 61"
           />
-        </svg>
+        </svg> */}
       </div>
       <div className="relative">
         <span className="absolute top-[6rem] left-0 w-full h-[calc(100%-6rem)] bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />

@@ -43,7 +43,7 @@ export const PageSectionTestimonials = ({
           <div className="flex justify-center wrapper-x wrapper-y">
             <div className="max-w-[52.25rem] w-full">
               <h2
-                className={`mb-6 heading-md lg:mb-10 md:text-center will-change-transform transition-all duration-300 ease-out delay-150 ${
+                className={`mb-6 heading-md lg:mb-10 md:text-center will-change-transform transition-all duration-300 ease-out delay-300 ${
                   isVisible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-6 opacity-0"
@@ -56,7 +56,7 @@ export const PageSectionTestimonials = ({
                 />
               </h2>
               <div
-                className={`relative will-change-transform transition-all duration-300 ease-out delay-300 ${
+                className={`relative will-change-transform transition-all duration-300 ease-out delay-450 ${
                   isVisible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-6 opacity-0"

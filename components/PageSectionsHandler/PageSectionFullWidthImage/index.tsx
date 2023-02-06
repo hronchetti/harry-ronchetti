@@ -28,7 +28,7 @@ export const PageSectionFullWidthImage = ({
       <div className={`wrapper-x ${paddingBottom ? "wrapper-y" : "wrapper-t"}`}>
         <div className="mb-8 lg:mb-12">
           <h2
-            className={`heading-md will-change-transform transition-all duration-300 ease-out delay-150 ${
+            className={`heading-md will-change-transform transition-all duration-300 ease-out delay-300 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
@@ -42,7 +42,7 @@ export const PageSectionFullWidthImage = ({
           </h2>
           {description && (
             <p
-              className={`mt-6 will-change-transform transition-all duration-300 ease-out delay-300 ${
+              className={`mt-6 will-change-transform transition-all duration-300 ease-out delay-450 ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-6 opacity-0"
@@ -53,7 +53,9 @@ export const PageSectionFullWidthImage = ({
           )}
         </div>
         <Image
-          className="w-full"
+          className={`w-full will-change-transform transition-all duration-300 ease-out delay-600 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+          }`}
           src={image.url}
           alt={image.title}
           width={image.width}
