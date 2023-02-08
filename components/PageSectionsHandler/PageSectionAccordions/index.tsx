@@ -7,6 +7,7 @@ import { PageSectionsAccordions } from "@/types"
 import { HeadingWithHighlight } from "@/components"
 import { Accordion } from "./Accordion"
 import { ToolsSection } from "./ToolsSection"
+import { VideoAsk } from "./VideoAsk"
 
 export const PageSectionAccordions = ({
   backgroundColour,
@@ -24,7 +25,7 @@ export const PageSectionAccordions = ({
 }) => {
   const content =
     variant === "Video Ask" ? (
-      <>Video Ask</>
+      <VideoAsk />
     ) : variant === "Tools" ? (
       <ToolsSection />
     ) : (

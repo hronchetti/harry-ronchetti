@@ -64,7 +64,7 @@ export const PageSectionTestimonials = ({
                 }`}
               >
                 <Swiper
-                  pagination
+                  pagination={{ clickable: true }}
                   direction="horizontal"
                   className="max-w-[38.75rem] mx-auto w-full pb-12"
                   modules={[Navigation, Pagination]}

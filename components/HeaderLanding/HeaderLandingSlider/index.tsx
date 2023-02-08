@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef } from "react"
+import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Swiper as SwiperType } from "swiper"
 import Image from "next/image"
