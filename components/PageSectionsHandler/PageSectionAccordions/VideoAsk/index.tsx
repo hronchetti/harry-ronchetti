@@ -7,7 +7,7 @@ export const VideoAsk = () => (
     </div>
     <div className="hidden w-full h-[400px] md:block invisible"></div>
     <iframe
-      className="rounded-3xl max-w-[576px] mx-auto z-20 md:absolute md:-translate-y-1/2 md:top-1/2 md:left-1/2 md:-translate-x-1/2"
+      className="rounded-3xl max-w-[576px] mx-auto z-20 md:absolute md:-translate-y-1/2 md:top-1/2 md:left-1/2 md:-translate-x-1/2 shadow-[0_8px_48px_-12px_rgba(18,25,38,0.16)]"
       src="https://www.videoask.com/fprsym165"
       allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
       width="100%"
