@@ -9,7 +9,7 @@ import PFNexusIntroductions from "@/lib/images/landing-page-slider/pf-nexus-intr
 import Reclaro135s from "@/lib/images/landing-page-slider/reclaro-1-3-5s-tall.jpg"
 import WilderBuilder from "@/lib/images/landing-page-slider/wilder-trips-builder-tall.jpg"
 import HomeAssistCheckout from "@/lib/images/landing-page-slider/home-assist-order-tall.jpg"
-import NudoSushiProduct from "@/lib/images/landing-page-slider/nudo-sushi-product-tall.jpg"
+import GotTheTest from "@/lib/images/landing-page-slider/gotthetest-appointments-tall.png"
 
 export const HeaderLandingSlider = () => {
   const indicatorSlide0 = React.useRef<HTMLSpanElement | null>(null)
@@ -116,8 +116,8 @@ export const HeaderLandingSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src={NudoSushiProduct}
-            alt="Nudo Sushi Product Viewer"
+            src={GotTheTest}
+            alt="GotTheTest Appointment Calendar"
             placeholder="blur"
           />
         </SwiperSlide>
