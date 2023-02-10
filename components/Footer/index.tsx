@@ -38,6 +38,7 @@ export const Footer = () => (
     <ul className="flex justify-center lg:justify-end">
       <li>
         <a
+          aria-label="LinkedIn"
           className="block text-grey-60 hover:text-grey-90"
           href="https://www.linkedin.com/in/harry-ronchetti/"
           target="_blank"
@@ -48,6 +49,7 @@ export const Footer = () => (
       </li>
       <li>
         <a
+          aria-label="GitHub"
           className="block text-grey-60 hover:text-grey-90"
           href="https://github.com/hronchetti"
           target="_blank"
@@ -58,6 +60,7 @@ export const Footer = () => (
       </li>
       <li>
         <a
+          aria-label="Medium"
           className="block text-grey-60 hover:text-grey-90"
           href="https://medium.com/@harryronchetti"
           target="_blank"

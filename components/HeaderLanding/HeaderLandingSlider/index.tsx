@@ -95,7 +95,6 @@ export const HeaderLandingSlider = () => {
           <Image
             src={Reclaro135s}
             alt="Relcaro OKR Software 1-3-5s"
-            priority
             placeholder="blur"
           />
         </SwiperSlide>
@@ -103,7 +102,6 @@ export const HeaderLandingSlider = () => {
           <Image
             src={WilderBuilder}
             alt="Wilder Trips road trip planning software trip builder"
-            priority
             placeholder="blur"
           />
         </SwiperSlide>
