@@ -109,15 +109,15 @@ export const HeaderLandingSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src={HomeAssistCheckout}
-            alt="Home Assist Boiler Installation Checkout"
+            src={GotTheTest}
+            alt="GotTheTest Appointment Calendar"
             placeholder="blur"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src={GotTheTest}
-            alt="GotTheTest Appointment Calendar"
+            src={HomeAssistCheckout}
+            alt="Home Assist Boiler Installation Checkout"
             placeholder="blur"
           />
         </SwiperSlide>

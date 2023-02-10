@@ -3,21 +3,31 @@ export const Footer = () => (
     <div className="text-center lg:text-left">
       &copy; {new Date().getFullYear()} Harry Ronchetti Consulting Ltd
     </div>
-    <ul className="flex justify-center mt-8 mb-7 lg:my-0">
-      <li className="mx-3">
+    <ul className="flex flex-wrap justify-center my-4 xs:mt-8 xs:mb-7 lg:my-0">
+      <li className="w-full mx-3 my-2 text-center xs:w-max xs:my-0">
         <a
-          className="block hover:underline"
-          href="https://www.linkedin.com/in/harry-ronchetti/"
+          className="block py-2 hover:underline xl:py-0"
+          href="https://app.getterms.io/view/T19oC/privacy/en-au"
           target="_blank"
           rel="noreferrer"
         >
           Privacy Policy
         </a>
       </li>
-      <li className="mx-3">
+      <li className="w-full mx-3 my-2 text-center xs:w-max xs:my-0">
         <a
-          className="block hover:underline"
-          href="https://www.linkedin.com/in/harry-ronchetti/"
+          className="block py-2 hover:underline xl:py-0"
+          href="https://app.getterms.io/view/T19oC/tos/en-au"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Terms of Use
+        </a>
+      </li>
+      <li className="w-full mx-3 my-2 text-center xs:w-max xs:my-0">
+        <a
+          className="block py-2 hover:underline xl:py-0"
+          href="https://app.getterms.io/view/T19oC/cookie/en-au"
           target="_blank"
           rel="noreferrer"
         >

@@ -30,7 +30,7 @@ export const PageSectionStrap = ({
             {preHeading}
           </span>
           <h2
-            className={`my-6 text-white heading-md will-change-transform transition-all duration-300 ease-out delay-300 ${
+            className={`my-6 lg:mb-8 text-white heading-md will-change-transform transition-all duration-300 ease-out delay-300 capitalize ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
@@ -39,7 +39,7 @@ export const PageSectionStrap = ({
             {heading}
           </h2>
           <p
-            className={`mb-6 lg:mb-10 will-change-transform transition-all duration-300 ease-out delay-450 ${
+            className={`mb-6 lg:mb-8 will-change-transform transition-all duration-300 ease-out delay-450 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
