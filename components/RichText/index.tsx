@@ -45,6 +45,8 @@ export const RichText = ({ content }: Props) => {
         <a
           className="inline underline break-words hover:no-underline"
           href={node.data.uri}
+          target="_blank"
+          rel="noreferrer"
         >
           {node.content[0].value}
         </a>
@@ -53,7 +55,7 @@ export const RichText = ({ content }: Props) => {
         <ul className="mt-3 mb-4 lg:mb-8 lg:mt-6 last-of-type:mb-0">
           {node.content.map((bullet: ListItem, index) => (
             <li className="relative mt-2 lg:mt-3" key={index}>
-              <span className="block w-1 h-1 rounded-full bg-yellow absolute left-3 top-2.5 lg:top-3" />
+              <span className="absolute block w-1.5 h-1.5 rounded-full bg-yellow left-[11px] top-[11px]" />
               <div className="pl-8">
                 {bullet.content[0].content.map((content) => (
                   <>

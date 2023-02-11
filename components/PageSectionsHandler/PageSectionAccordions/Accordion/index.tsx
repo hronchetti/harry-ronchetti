@@ -1,9 +1,9 @@
 "use client"
 
 import React from "react"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import type { Accordion as AccordionType } from "@/types"
+import { RichText } from "@/components"
 
 export const Accordion = ({
   emoji,
@@ -70,7 +70,8 @@ export const Accordion = ({
         }`}
       >
         <div className={`pb-6 lg:pb-8 ${emoji ? "pl-9" : ""}`}>
-          {documentToReactComponents(content.json)}
+          {/* @ts-ignore: Unreachable code error */}
+          <RichText content={content} />
         </div>
       </div>
     </div>

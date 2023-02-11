@@ -1,5 +1,6 @@
 import PlausibleProvider from "next-plausible"
 import { Inter } from "@next/font/google"
+import Script from "next/script"
 
 import "../styles/swiper.css"
 import "../styles/icons.css"
@@ -32,6 +33,10 @@ export default function RootLayout({
           {children}
           <Footer />
         </body>
+        <Script
+          defer
+          src="https://cdn-cookieyes.com/client_data/84520bfbdca9f626927b40b5/script.js"
+        />
       </html>
     </PlausibleProvider>
   )
