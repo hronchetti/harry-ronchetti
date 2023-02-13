@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const Nav = ({ variant }: Props) => (
-  <nav className="flex items-center justify-between lg:grid md:grid-cols-3 py-2.5 px-4 md:px-12 xl:px-24 max-w-[1440px] mx-auto md:py-4">
+  <nav className="sticky top-0 left-0 w-full bg-white z-50 flex items-center justify-between lg:grid md:grid-cols-3 py-2.5 px-4 md:px-12 xl:px-24 max-w-[1440px] mx-auto md:py-4">
     <div>
       <Link href="/" className="flex items-center justify-start w-max">
         <Image
