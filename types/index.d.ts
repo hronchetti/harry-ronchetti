@@ -12,8 +12,8 @@ export type Page = {
         PageSectionsAccordions,
         PageSectionsCaseStudies,
         PageSectionsFullWidthImage,
-        PageSectionsTabs,
         PageSectionsStrap,
+        PageSectionsTabs,
         PageSectionsTestimonials
       ]
     }
