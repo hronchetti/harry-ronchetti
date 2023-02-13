@@ -7,8 +7,7 @@ export default async function Home() {
 
   return (
     <>
-      <Nav variant="case-studies" type="static" />
-      <Nav variant="book-call" type="fixed" />
+      <Nav variant="case-studies" />
       <HeaderLanding
         heading={data.page.header.heading}
         description={data.page.header.description}
