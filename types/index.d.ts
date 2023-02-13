@@ -12,6 +12,7 @@ export type Page = {
         PageSectionsAccordions,
         PageSectionsCaseStudies,
         PageSectionsFullWidthImage,
+        PageSectionsTabs,
         PageSectionsStrap,
         PageSectionsTestimonials
       ]
@@ -100,6 +101,12 @@ export type CaseStudy = {
   featuredImage: MediaAsset
 }
 
+export type Tab = {
+  name: string
+  image: MediaAsset
+  imageMobile: MediaAsset
+}
+
 // Page Sections
 
 export type PageSectionsHeader = {
@@ -143,6 +150,19 @@ export type PageSectionsFullWidthImage = {
   description: string
   backgroundColour: "white" | "grey-10"
   image: MediaAsset
+}
+
+export type PageSectionsTabs = {
+  __typename: "PageSectionsTabs"
+  sys: {
+    id: string
+  }
+  heading: string
+  headingHighlight: string
+  backgroundColour: "white" | "grey-10"
+  tabsCollection: {
+    items: Tab[]
+  }
 }
 
 export type PageSectionsStrap = {

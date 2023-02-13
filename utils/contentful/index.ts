@@ -31,7 +31,7 @@ export async function getPageData(pageId: string, preview = false) {
             description
             variant
           }
-          sectionsCollection(limit: 5) {
+          sectionsCollection(limit: 6) {
             items {
               ... on PageSectionsAccordions {
                 __typename
@@ -105,6 +105,34 @@ export async function getPageData(pageId: string, preview = false) {
                   title
                   url
                   width
+                }
+              }
+              ... on PageSectionsTabs {
+                __typename
+                sys {
+                  id
+                }
+                heading
+                headingHighlight
+                backgroundColour
+                tabsCollection(limit: 2) {
+                  items {
+                    name
+                    image {
+                      height
+                      size
+                      title
+                      url
+                      width
+                    }
+                    imageMobile {
+                      height
+                      size
+                      title
+                      url
+                      width
+                    }
+                  }
                 }
               }
               ... on PageSectionsStrap {

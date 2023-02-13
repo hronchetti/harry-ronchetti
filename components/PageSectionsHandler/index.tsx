@@ -2,6 +2,7 @@ import type {
   PageSectionsAccordions,
   PageSectionsCaseStudies,
   PageSectionsFullWidthImage,
+  PageSectionsTabs,
   PageSectionsStrap,
   PageSectionsTestimonials,
 } from "@/types"
@@ -9,6 +10,7 @@ import type {
 import { PageSectionAccordions } from "./PageSectionAccordions"
 import { PageSectionCaseStudies } from "./PageSectionCaseStudies"
 import { PageSectionFullWidthImage } from "./PageSectionFullWidthImage"
+import { PageSectionTabs } from "./PageSectionTabs"
 import { PageSectionStrap } from "./PageSectionStrap"
 import { PageSectionTestimonials } from "./PageSectionTestimonials"
 
@@ -18,6 +20,7 @@ type Props = {
     PageSectionsCaseStudies,
     PageSectionsFullWidthImage,
     PageSectionsStrap,
+    PageSectionsTabs,
     PageSectionsTestimonials
   ]
   firstSectionRounded?: boolean
@@ -71,6 +74,20 @@ export const PageSectionsHandler = ({
             headingHighlight={section.headingHighlight}
             description={section.description}
             image={section.image}
+            paddingBottom={
+              backgroundColours[index - 1] !== section.backgroundColour ||
+              index === 0
+            }
+          />
+        ) : section.__typename === "PageSectionsTabs" ? (
+          <PageSectionTabs
+            key={id}
+            sys={section.sys}
+            __typename={section.__typename}
+            backgroundColour={section.backgroundColour}
+            heading={section.heading}
+            headingHighlight={section.headingHighlight}
+            tabsCollection={section.tabsCollection}
             paddingBottom={
               backgroundColours[index - 1] !== section.backgroundColour ||
               index === 0

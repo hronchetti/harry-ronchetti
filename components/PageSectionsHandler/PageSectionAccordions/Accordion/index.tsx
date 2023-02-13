@@ -65,11 +65,19 @@ export const Accordion = ({
       </button>
       <div
         ref={accordionElement}
-        className={`overflow-hidden transition-all duration-300 ${
+        className={`overflow-hidden transition-all duration-300 will-change-auto ${
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <div className={`pb-6 lg:pb-8 ${emoji ? "pl-9" : ""}`}>
+        <div
+          className={`pb-6 lg:pb-8 ${
+            emoji ? "pl-9" : ""
+          } will-change-transform ${
+            isOpen
+              ? " fadeInAndUp visible translate-y-0"
+              : "invisible translate-y-6"
+          }`}
+        >
           {/* @ts-ignore: Unreachable code error */}
           <RichText content={content} />
         </div>

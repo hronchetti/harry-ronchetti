@@ -24,7 +24,7 @@ export const ToolsSection = () => (
         <Blob />
       </div>
     </div>
-    <div className="lg:absolute grid grid-cols-2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:grid-cols-3 drop-shadow-xl w-[258px] gap-7 mx-auto lg:w-[25rem]">
+    <div className="lg:absolute grid grid-cols-2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:top-1/2 lg:grid-cols-3 w-[258px] gap-7 mx-auto lg:w-[25rem]">
       <Tool logo={<HotJarLogo />} name="Hotjar" />
       <Tool logo={<MixPanelLogo />} name="Mixpanel" />
       <Tool logo={<GoogleDocsLogo />} name="Google Docs" />
