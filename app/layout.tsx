@@ -7,7 +7,7 @@ import "../styles/icons.css"
 import "../styles/tailwind.css"
 import "../styles/wiggle.css"
 
-import { Footer } from "@/components"
+import { Footer, Nav } from "@/components"
 
 const inter = Inter({
   subsets: ["latin"],

@@ -55,20 +55,6 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
             </clipPath>
           </defs>
         </svg>
-        {/* <svg
-          className="absolute left-[-484px] top-9 w-[968px] z-[-1] hidden lg:block wiggle"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 968 361"
-        >
-          <path
-            stroke="#FAC515"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="120"
-            d="M61 61s52.875 240 105.75 240S219.625 61 272.5 61s52.875 240 105.75 240S431.125 61 484 61s52.875 240 105.75 240S642.625 61 695.5 61s52.875 240 105.75 240S907 61 907 61"
-          />
-        </svg> */}
       </div>
       <div className="relative">
         <span className="absolute top-[6rem] left-0 w-full h-[calc(100%-6rem)] bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />
