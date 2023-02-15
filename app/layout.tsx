@@ -7,7 +7,7 @@ import "../styles/icons.css"
 import "../styles/tailwind.css"
 import "../styles/wiggle.css"
 
-import { Footer, Nav } from "@/components"
+import { Footer, HotJar } from "@/components"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +33,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </body>
+        <HotJar />
         <Script
           defer
           src="https://cdn-cookieyes.com/client_data/84520bfbdca9f626927b40b5/script.js"
