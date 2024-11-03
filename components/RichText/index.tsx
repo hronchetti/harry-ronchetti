@@ -56,7 +56,7 @@ export const RichText = ({ content }: Props) => {
           {node.content.map((bullet: ListItem, index) => (
             <li className="relative mt-2 lg:mt-3" key={index}>
               <span className="absolute block w-1.5 h-1.5 rounded-full bg-yellow left-[11px] top-[11px]" />
-              <div className="pl-8">
+              <span key={index} className="pl-8 block">
                 {bullet.content[0].content.map((content) => (
                   <>
                     {content.nodeType === "text" && content.value !== "" && (
@@ -77,7 +77,7 @@ export const RichText = ({ content }: Props) => {
                     )}
                   </>
                 ))}
-              </div>
+              </span>
             </li>
           ))}
         </ul>
