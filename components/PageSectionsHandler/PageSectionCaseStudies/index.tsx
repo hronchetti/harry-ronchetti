@@ -27,7 +27,7 @@ export const PageSectionCaseStudies = ({
         <div className="wrapper-x">
           <h2
             className={cx(
-              "heading-md lg:mb-10 xl:mb-16 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
+              "heading-md lg:mb-10 xl:mb-12 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
               {
                 "translate-y-0 opacity-100": isVisible,
                 "translate-y-6 opacity-0": !isVisible,

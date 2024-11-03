@@ -37,7 +37,7 @@ export const PageSectionTestimonials = ({
           <div className="flex justify-center wrapper-x">
             <h2
               className={cx(
-                "mb-6 heading-md lg:mb-10 xl:mb-16 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
+                "mb-6 heading-md lg:mb-10 xl:mb-12 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
                 `${
                   isVisible
                     ? "translate-y-0 opacity-100"
@@ -55,7 +55,7 @@ export const PageSectionTestimonials = ({
           </div>
           <div
             className={cx(
-              "relative will-change-transform transition-all duration-300 ease-out delay-450",
+              "relative will-change-transform transition-all duration-300 ease-out delay-450 px-6 lg:px-6 xl:px-12 mx-auto",
               {
                 "translate-y-0 opacity-100": isVisible,
                 "translate-y-6 opacity-0": !isVisible,
@@ -65,16 +65,16 @@ export const PageSectionTestimonials = ({
             <Swiper
               pagination={{ clickable: true }}
               direction="horizontal"
-              className="w-full pb-12"
+              className="relative w-full"
               autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
+                // delay: 2000,
+                pauseOnMouseEnter: true,
               }}
               modules={[Navigation, Pagination, Autoplay]}
               breakpoints={{
-                768: { slidesPerView: 1 },
-                1024: { slidesPerView: 2 },
-                1280: { slidesPerView: 3 },
+                0: { slidesPerView: 1, spaceBetween: 24 },
+                1024: { slidesPerView: 2, spaceBetween: 32 },
+                1280: { slidesPerView: 3, spaceBetween: 40 },
               }}
               navigation={{
                 prevEl: navigationPrevRef.current,
@@ -88,7 +88,7 @@ export const PageSectionTestimonials = ({
               {testimonialsCollection.items.map((testimonial) => (
                 <SwiperSlide
                   key={testimonial.sys.id}
-                  className="p-12 border bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
+                  className="p-12 mb-12 text-base border bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
                 >
                   <Testimonial
                     sys={testimonial.sys}
@@ -97,6 +97,20 @@ export const PageSectionTestimonials = ({
                   />
                 </SwiperSlide>
               ))}
+              <button
+                ref={navigationPrevRef}
+                aria-label="Previous Testimonial"
+                className="hidden p-3 z-50 md:block absolute -left-6 top-[calc((100%-3rem)/2)] rounded-full bg-grey-100 disabled:invisible disabled:pointer-events-none drop-shadow-2xl before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[250%] before:rotate-[35deg] overflow-hidden before:bg-white"
+              >
+                <span className="block text-2xl leading-6 text-white icon-arrow-right" />
+              </button>
+              <button
+                ref={navigationNextRef}
+                aria-label="Next Testimonial"
+                className="hidden p-3 z-50 md:block absolute -right-6 top-[calc((100%-3rem)/2)] rounded-full bg-grey-100 disabled:invisible disabled:pointer-events-none drop-shadow-2xl before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[250%] before:rotate-[35deg] overflow-hidden before:bg-white"
+              >
+                <span className="block text-2xl leading-6 text-white icon-arrow-left" />
+              </button>
             </Swiper>
           </div>
         </div>

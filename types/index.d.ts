@@ -8,14 +8,7 @@ export type Page = {
     variant: "Landing" | "Case studies"
     header: PageSectionsHeader
     sectionsCollection: {
-      items: [
-        PageSectionsAccordions,
-        PageSectionsCaseStudies,
-        PageSectionsFullWidthImage,
-        PageSectionsStrap,
-        PageSectionsTabs,
-        PageSectionsTestimonials
-      ]
+      items: [PageSectionsCaseStudies, PageSectionsTestimonials]
     }
     seo: Seo
   }

@@ -6,7 +6,7 @@ import { RichText } from "@/components"
 
 export const Testimonial = ({ content, receiver }: TestimonialType) => (
   <>
-    {/* @ts-ignore: Unreachable code error */}
+    {/* @ts-ignore */}
     <RichText content={content} />
     {receiver.linkedInProfile ? (
       <a
@@ -52,7 +52,7 @@ export const Testimonial = ({ content, receiver }: TestimonialType) => (
           <span className="block mb-1 text-lg font-semibold leading-6 text-grey-100">
             {receiver.name}
           </span>
-          <span className="block text-base leading-5 text-grey-70">
+          <span className="block w-full text-base leading-5 truncate text-grey-70">
             {receiver.jobTitle + ", " + receiver.company.name}
           </span>
         </div>

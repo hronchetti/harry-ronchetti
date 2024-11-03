@@ -57,7 +57,7 @@ export const RichText = ({ content }: Props) => {
           {node.content.map((bullet: ListItem, index) => (
             <li className="relative mt-2 lg:mt-3" key={index}>
               <span className="absolute block w-1.5 h-1.5 rounded-full bg-yellow left-[11px] top-[11px]" />
-              <span className="pl-8 block">
+              <span className="block pl-8">
                 {bullet.content[0].content.map((content, index) => (
                   <React.Fragment key={content.nodeType + index}>
                     {content.nodeType === "text" && content.value !== "" && (
@@ -91,7 +91,7 @@ export const RichText = ({ content }: Props) => {
 
   return (
     <>
-      {/* @ts-ignore: Unreachable code error */}
+      {/* @ts-ignore */}
       {documentToReactComponents(content.json, options)}
     </>
   )
