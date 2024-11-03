@@ -1,12 +1,11 @@
 import type { PageSectionsHeader } from "@/types"
-import { Button, LogoCloud } from "@/components"
-import { HeaderLandingSlider } from "./HeaderLandingSlider"
+import { Button } from "@/components"
 
 export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
   <header className="w-full text-center">
     <div className="relative overflow-hidden">
       <div className="flex flex-wrap justify-center pt-6 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-16 wrapper-x">
-        <span className="block px-2 py-1 mb-6 text-sm font-medium tracking-widest uppercase border rounded-lg text-grey-70 bg-grey-20 border-grey-30">
+        <span className="block px-2 py-1 mb-5 text-sm font-medium tracking-widest uppercase border rounded-lg sm:mb-6 text-grey-70 bg-grey-20 border-grey-30">
           Looking for a new role
         </span>
         <div className="w-full">
@@ -31,10 +30,6 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
           </span>
         </div>
       </div>
-    </div>
-    <div className="wrapper-x">
-      <LogoCloud />
-      <HeaderLandingSlider />
     </div>
   </header>
 )

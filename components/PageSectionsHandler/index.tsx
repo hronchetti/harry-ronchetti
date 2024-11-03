@@ -1,24 +1,10 @@
-import type {
-  PageSectionsAccordions,
-  PageSectionsCaseStudies,
-  PageSectionsFullWidthImage,
-  PageSectionsTabs,
-  PageSectionsStrap,
-  PageSectionsTestimonials,
-} from "@/types"
+import type { PageSectionsCaseStudies, PageSectionsTestimonials } from "@/types"
 
 import { PageSectionCaseStudies } from "./PageSectionCaseStudies"
 import { PageSectionTestimonials } from "./PageSectionTestimonials"
 
 type Props = {
-  sections: [
-    PageSectionsAccordions,
-    PageSectionsCaseStudies,
-    PageSectionsFullWidthImage,
-    PageSectionsStrap,
-    PageSectionsTabs,
-    PageSectionsTestimonials
-  ]
+  sections: [PageSectionsCaseStudies, PageSectionsTestimonials]
   firstSectionRounded?: boolean
 }
 

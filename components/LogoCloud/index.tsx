@@ -2,32 +2,65 @@
 
 import React from "react"
 
-import BreezeLogo from "../../lib/logos/clients/breeze-logo.svg"
-import CleverClinicLogo from "../../lib/logos/clients/clever-clinic-logo.svg"
-import GotTheTestLogo from "../../lib/logos/clients/gotthetest-logo.svg"
-import PFNexusLogo from "../../lib/logos/clients/pf-nexus-logo.svg"
-import ReclaroLogo from "../../lib/logos/clients/reclaro-logo.svg"
-import WilderLogo from "../../lib/logos/clients/wilder-logo.svg"
+import { BreezeLogo } from "../../lib/logos/clients/breeze"
+import { CleverClinicLogo } from "../../lib/logos/clients/clever-clinic"
+import { EggLogo } from "../../lib/logos/clients/egg"
+import { GotTheTestLogo } from "../../lib/logos/clients/gotthetest"
+import { HedgehogLabLogo } from "../../lib/logos/clients/hedgehog-lab"
+import { HomeAssistLogo } from "../../lib/logos/clients/home-assist"
+import { IBMLogo } from "../../lib/logos/clients/ibm"
+import { NE6Logo } from "../../lib/logos/clients/ne6"
+import { PFNexusLogo } from "../../lib/logos/clients/pf-nexus"
+import { ReclaroLogo } from "../../lib/logos/clients/reclaro"
+import { VizzlyLogo } from "../../lib/logos/clients/vizzly"
+import { WilderTripsLogo } from "../../lib/logos/clients/wildertrips"
 
 export const LogoCloud = () => (
-  <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 xl:flex xl:justify-between xl:gap-0 mt-10 lg:mt-[4.5rem]">
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[176px] xl:block">
-      <GotTheTestLogo />
+  <section className="mb-6 sm:mb-8 lg:mb-10 xl:mb-12">
+    <h2 className="text-xl font-semibold text-center text-grey-100 wrapper-x">
+      8+ years in product engineering
+    </h2>
+    <div className="mt-6 overflow-hidden bg-white xl:mt-8 whitespace-nowrap">
+      <div id="logos" className="inline-block animate-slide">
+        <CleverClinicLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <PFNexusLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <VizzlyLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <IBMLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HedgehogLabLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <WilderTripsLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <BreezeLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <NE6Logo className="inline-block h-10 mx-4 lg:mx-6" />
+        <EggLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <GotTheTestLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HomeAssistLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <ReclaroLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        {/*  */}
+        <CleverClinicLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <PFNexusLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <VizzlyLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <IBMLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HedgehogLabLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <WilderTripsLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <BreezeLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <NE6Logo className="inline-block h-10 mx-4 lg:mx-6" />
+        <EggLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <GotTheTestLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HomeAssistLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <ReclaroLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        {/*  */}
+        <CleverClinicLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <PFNexusLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <VizzlyLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <IBMLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HedgehogLabLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <WilderTripsLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <BreezeLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <NE6Logo className="inline-block h-10 mx-4 lg:mx-6" />
+        <EggLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <GotTheTestLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <HomeAssistLogo className="inline-block h-10 mx-4 lg:mx-6" />
+        <ReclaroLogo className="inline-block h-10 mx-4 lg:mx-6" />
+      </div>
     </div>
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[156px] xl:block">
-      <WilderLogo />
-    </div>
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[233px] xl:block">
-      <CleverClinicLogo />
-    </div>
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[165px] xl:block">
-      <PFNexusLogo />
-    </div>
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[150px] xl:block">
-      <BreezeLogo />
-    </div>
-    <div className="flex justify-center h-10 lg:h-12 xl:w-[123px] xl:block">
-      <ReclaroLogo />
-    </div>
-  </div>
+  </section>
 )

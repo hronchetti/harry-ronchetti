@@ -63,6 +63,10 @@
     max-width: 100%;
     max-height: 100%;
   }
+
+  #logos:hover {
+    animation-play-state: paused;
+  }
 }
 
 @layer utilities {

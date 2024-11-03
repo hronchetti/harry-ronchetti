@@ -1,7 +1,8 @@
 import { getPageData } from "@/utils"
 import type { Page } from "@/types"
 import { PageSectionsHandler, HeaderLanding, Nav } from "@/components"
-import { Seo } from "@/components"
+import { Seo, LogoCloud } from "@/components"
+import { HeaderLandingSlider } from "@/components/HeaderLanding/HeaderLandingSlider"
 
 export default async function Home() {
   const data: Page = await getPageData("1ToLlYVJrtUPYsRWxXYHJp")
@@ -14,6 +15,8 @@ export default async function Home() {
         description={data.page.header.description}
         variant={data.page.header.variant}
       />
+      <LogoCloud />
+      <HeaderLandingSlider />
       <PageSectionsHandler
         sections={data.page.sectionsCollection.items}
         firstSectionRounded={false}

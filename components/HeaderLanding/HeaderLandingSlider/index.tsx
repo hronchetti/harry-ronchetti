@@ -12,51 +12,49 @@ import HomeAssistCheckout from "@/lib/images/landing-page-slider/home-assist-ord
 import GotTheTest from "@/lib/images/landing-page-slider/gotthetest-appointments-tall.png"
 
 export const HeaderLandingSlider = () => (
-  <Swiper
-    className="w-full overflow-hidden border rounded-lg lg:rounded-3xl drop-shadow-md border-grey-20"
-    spaceBetween={16}
-    centeredSlides={true}
-    modules={[Autoplay]}
-    autoplay={{
-      delay: 2000,
-      disableOnInteraction: false,
-    }}
-  >
-    <SwiperSlide>
-      <Image
-        src={PFNexusIntroductions}
-        alt="PF Nexus renewable energy software project introductions"
-        priority
-        placeholder="blur"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src={Reclaro135s}
-        alt="Relcaro OKR Software 1-3-5s"
-        placeholder="blur"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src={WilderBuilder}
-        alt="Wilder Trips road trip planning software trip builder"
-        placeholder="blur"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src={GotTheTest}
-        alt="GotTheTest Appointment Calendar"
-        placeholder="blur"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <Image
-        src={HomeAssistCheckout}
-        alt="Home Assist Boiler Installation Checkout"
-        placeholder="blur"
-      />
-    </SwiperSlide>
-  </Swiper>
+  <div className="wrapper-x">
+    <Swiper
+      className="w-full overflow-hidden border rounded-lg lg:rounded-3xl drop-shadow-md border-grey-20"
+      spaceBetween={16}
+      centeredSlides={true}
+      modules={[Autoplay]}
+    >
+      <SwiperSlide>
+        <Image
+          src={PFNexusIntroductions}
+          alt="PF Nexus renewable energy software project introductions"
+          priority
+          placeholder="blur"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image
+          src={Reclaro135s}
+          alt="Relcaro OKR Software 1-3-5s"
+          placeholder="blur"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image
+          src={WilderBuilder}
+          alt="Wilder Trips road trip planning software trip builder"
+          placeholder="blur"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image
+          src={GotTheTest}
+          alt="GotTheTest Appointment Calendar"
+          placeholder="blur"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image
+          src={HomeAssistCheckout}
+          alt="Home Assist Boiler Installation Checkout"
+          placeholder="blur"
+        />
+      </SwiperSlide>
+    </Swiper>
+  </div>
 )

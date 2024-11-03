@@ -5,6 +5,15 @@ module.exports = {
   content: ["./components/**/*.{html,js,tsx}", "./app/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        slide: "35s slide infinite linear",
+      },
       screens: {
         xs: "480px",
         sm: "640px",
