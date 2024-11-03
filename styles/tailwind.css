@@ -24,8 +24,7 @@
 
 @layer base {
   body {
-    @apply h-screen font-sans text-lg font-normal text-grey-70;
-    /* Smoother font rendering */
+    @apply h-screen font-sans text-lg font-normal text-grey-80;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
