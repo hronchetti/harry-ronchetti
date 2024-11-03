@@ -32,7 +32,7 @@ export const Testimonial = ({ content, receiver }: TestimonialType) => (
           <span className="block mb-1 text-lg font-semibold leading-6 text-grey-100">
             {receiver.name}
           </span>
-          <span className="block text-base leading-5 text-grey-70">
+          <span className="block text-base leading-5 text-grey-80">
             {receiver.jobTitle + ", " + receiver.company.name}
           </span>
         </div>

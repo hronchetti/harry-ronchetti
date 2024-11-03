@@ -1,16 +1,16 @@
 "use client"
 
 import React from "react"
-import SwiperCore, { Pagination, Navigation } from "swiper"
+import SwiperCore from "swiper"
+import { Pagination, Navigation, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import TrackVisibility from "react-on-screen"
+import cx from "classnames"
 
 import { PageSectionsTestimonials } from "@/types"
 
 import { Testimonial } from "./Testimonial"
 import { HeadingWithHighlight } from "@/components"
-
-import Blob from "@/lib/blob.svg"
 
 SwiperCore.use([Pagination, Navigation])
 
@@ -33,85 +33,73 @@ export const PageSectionTestimonials = ({
       }`}
     >
       {({ isVisible }) => (
-        <>
-          <span className="hidden lg:block absolute pointer-events-none w-[30rem] left-[-15rem] bottom-[-15rem] -z-10">
-            <Blob />
-          </span>
-          <span className="hidden lg:block absolute pointer-events-none w-[30rem] right-[-15rem] top-[-15rem] -z-10">
-            <Blob />
-          </span>
-          <div className="flex justify-center wrapper-x wrapper-y">
-            <div className="max-w-[52.25rem] w-full">
-              <h2
-                className={`mb-6 heading-md lg:mb-10 md:text-center will-change-transform transition-all duration-300 ease-out delay-300 ${
+        <div className="wrapper-y">
+          <div className="flex justify-center wrapper-x">
+            <h2
+              className={cx(
+                "mb-6 heading-md lg:mb-10 xl:mb-16 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
+                `${
                   isVisible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-6 opacity-0"
-                }`}
-              >
-                <HeadingWithHighlight
-                  heading={heading}
-                  headingHighlight={headingHighlight}
-                  variant="heading-md"
-                  isVisible={isVisible}
-                />
-              </h2>
-              <div
-                className={`relative will-change-transform transition-all duration-300 ease-out delay-450 ${
-                  isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-6 opacity-0"
-                }`}
-              >
-                <Swiper
-                  pagination={{ clickable: true }}
-                  direction="horizontal"
-                  className="max-w-[38.75rem] mx-auto w-full pb-12"
-                  modules={[Navigation, Pagination]}
-                  navigation={{
-                    prevEl: navigationPrevRef.current,
-                    nextEl: navigationNextRef.current,
-                  }}
-                  onBeforeInit={(swiper: any) => {
-                    swiper.params.navigation.prevEl = navigationPrevRef.current
-                    swiper.params.navigation.nextEl = navigationNextRef.current
-                  }}
-                  slidesPerView={1}
-                  slidesPerGroup={1}
-                >
-                  {testimonialsCollection.items.map((testimonial) => (
-                    <SwiperSlide
-                      key={testimonial.sys.id}
-                      className="w-full px-1"
-                    >
-                      <Testimonial
-                        sys={testimonial.sys}
-                        content={testimonial.content}
-                        receiver={testimonial.receiver}
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-                <div className="grid grid-cols-2 gap-4 pt-8 md:pt-0">
-                  <button
-                    aria-label="Previous Testimonial"
-                    ref={navigationPrevRef}
-                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:left-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 disabled:invisible disabled:pointer-events-none"
-                  >
-                    <span className="block icon-chevron-left text-[2rem] leading-8 text-grey-50" />
-                  </button>
-                  <button
-                    aria-label="Next Testimonial"
-                    ref={navigationNextRef}
-                    className="p-2 border-2 rounded-lg border-grey-20 md:absolute md:right-0 md:top-[calc((100%-3rem)/2)] md:rounded-full bg-white md:hover:bg-grey-10 disabled:invisible disabled:pointer-events-none"
-                  >
-                    <span className="block icon-chevron-right text-[2rem] leading-8 text-grey-50" />
-                  </button>
-                </div>
-              </div>
-            </div>
+                }`
+              )}
+            >
+              <HeadingWithHighlight
+                heading={heading}
+                headingHighlight={headingHighlight}
+                variant="heading-md"
+                isVisible={isVisible}
+              />
+            </h2>
           </div>
-        </>
+          <div
+            className={cx(
+              "relative will-change-transform transition-all duration-300 ease-out delay-450",
+              {
+                "translate-y-0 opacity-100": isVisible,
+                "translate-y-6 opacity-0": !isVisible,
+              }
+            )}
+          >
+            <Swiper
+              pagination={{ clickable: true }}
+              direction="horizontal"
+              className="w-full pb-12"
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              modules={[Navigation, Pagination, Autoplay]}
+              breakpoints={{
+                768: { slidesPerView: 1 },
+                1024: { slidesPerView: 2 },
+                1280: { slidesPerView: 3 },
+              }}
+              navigation={{
+                prevEl: navigationPrevRef.current,
+                nextEl: navigationNextRef.current,
+              }}
+              onBeforeInit={(swiper: any) => {
+                swiper.params.navigation.prevEl = navigationPrevRef.current
+                swiper.params.navigation.nextEl = navigationNextRef.current
+              }}
+            >
+              {testimonialsCollection.items.map((testimonial) => (
+                <SwiperSlide
+                  key={testimonial.sys.id}
+                  className="p-12 border bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
+                >
+                  <Testimonial
+                    sys={testimonial.sys}
+                    content={testimonial.content}
+                    receiver={testimonial.receiver}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
       )}
     </TrackVisibility>
   )

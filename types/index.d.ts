@@ -17,13 +17,7 @@ export type Page = {
         PageSectionsTestimonials
       ]
     }
-    seo: {
-      title: string
-      titleExtension: {
-        extension: string
-      }
-      description: string
-    }
+    seo: Seo
   }
 }
 
@@ -40,10 +34,7 @@ export type MediaAsset = {
 
 export type Seo = {
   title: string
-  titleTemplate: {
-    extension: string
-  }
-  metaDescription: string
+  description: string
   socialImage?: MediaAsset
 }
 
@@ -134,6 +125,8 @@ export type PageSectionsCaseStudies = {
   sys: {
     id: string
   }
+  heading: string
+  headingHighlight: string
   backgroundColour: "white" | "grey-10"
   caseStudiesCollection: {
     items: CaseStudy[]

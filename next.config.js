@@ -8,8 +8,22 @@ const nextConfig = {
 
     return config
   },
+  async redirects() {
+    return [
+      {
+        source: "/case-studies",
+        destination: "/",
+        permanent: true,
+      },
+    ]
+  },
   images: {
-    domains: ["images.ctfassets.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+      },
+    ],
   },
 }
 

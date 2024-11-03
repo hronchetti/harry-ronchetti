@@ -27,35 +27,26 @@
 }
 
 .icon-external-link:before {
-  content: "\e90a";
-}
-.icon-arrow-left:before {
   content: "\e907";
 }
-.icon-arrow-right:before {
-  content: "\e908";
-}
-.icon-medium:before {
-  content: "\e909";
-}
-.icon-chevron-down:before {
+.icon-arrow-down:before {
   content: "\e900";
 }
-.icon-chevron-left:before {
+.icon-arrow-left:before {
   content: "\e901";
 }
-.icon-chevron-right:before {
+.icon-arrow-right:before {
   content: "\e902";
 }
-.icon-chevron-up:before {
+.icon-download:before {
   content: "\e903";
 }
 .icon-github:before {
   content: "\e904";
 }
-.icon-instagram:before {
+.icon-linkedin:before {
   content: "\e905";
 }
-.icon-linkedin:before {
+.icon-medium:before {
   content: "\e906";
 }

@@ -5,8 +5,7 @@ import type { Seo as SeoType } from "@/types"
 
 export const Seo = ({
   title,
-  titleTemplate,
-  metaDescription,
+  description,
   socialImage,
   article,
   updatedAt,
@@ -18,7 +17,7 @@ export const Seo = ({
   updatedAt?: string
   slug: string
 }) => {
-  const seoTitle = title + " | " + titleTemplate.extension
+  const seoTitle = title
 
   const seoSlug = (slug: string) => {
     if (slug !== "/") {
@@ -60,14 +59,14 @@ export const Seo = ({
       <link rel="canonical" href={seoSlug(slug)} />
       <meta property="og:url" content={seoSlug(slug)} />
       {/* Description */}
-      <meta name="description" content={metaDescription} />
-      <meta property="og:description" content={metaDescription} />
+      <meta name="description" content={description} />
+      <meta property="og:description" content={description} />
       {/* Twitter */}
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:creator" content="@Breeze_Academy" />
       <meta name="twitter:site" content={process.env.NEXT_PUBLIC_SITE_URL} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
         content={

@@ -5,6 +5,9 @@ import "../styles/swiper.css"
 import "../styles/icons.css"
 import "../styles/tailwind.css"
 import "../styles/wiggle.css"
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 import { Footer, HotJar } from "@/components"
 

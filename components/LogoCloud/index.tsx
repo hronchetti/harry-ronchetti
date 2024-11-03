@@ -9,18 +9,8 @@ import PFNexusLogo from "../../lib/logos/clients/pf-nexus-logo.svg"
 import ReclaroLogo from "../../lib/logos/clients/reclaro-logo.svg"
 import WilderLogo from "../../lib/logos/clients/wilder-logo.svg"
 
-type Props = {
-  variant: "Landing" | "Case Studies"
-}
-
-export const LogoCloud = ({ variant }: Props) => (
-  <div
-    className={`grid grid-cols-2 gap-6 sm:grid-cols-3 xl:flex xl:justify-between xl:gap-0 ${
-      variant === "Landing"
-        ? "mt-10 lg:mt-[4.5rem]"
-        : "hidden lg:block mt-24 mb-16"
-    }`}
-  >
+export const LogoCloud = () => (
+  <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 xl:flex xl:justify-between xl:gap-0 mt-10 lg:mt-[4.5rem]">
     <div className="flex justify-center h-10 lg:h-12 xl:w-[176px] xl:block">
       <GotTheTestLogo />
     </div>

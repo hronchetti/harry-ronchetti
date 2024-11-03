@@ -2,67 +2,39 @@ import type { PageSectionsHeader } from "@/types"
 import { Button, LogoCloud } from "@/components"
 import { HeaderLandingSlider } from "./HeaderLandingSlider"
 
-export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => {
-  return (
-    <header className="w-full text-center">
-      <div className="relative overflow-hidden">
-        <div className="pt-6 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-16 wrapper-x">
+export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
+  <header className="w-full text-center">
+    <div className="relative overflow-hidden">
+      <div className="flex flex-wrap justify-center pt-6 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-16 wrapper-x">
+        <span className="block px-2 py-1 mb-6 text-sm font-medium tracking-widest uppercase border rounded-lg text-grey-70 bg-grey-20 border-grey-30">
+          Looking for a new role
+        </span>
+        <div className="w-full">
           <h1 className="max-w-screen-lg mx-auto text-grey-100 heading-xl">
             {heading}
           </h1>
-          {description ? (
+          {description && (
             <p className="max-w-md mx-auto mt-5 lg:mt-6">{description}</p>
-          ) : (
-            ""
           )}
-          <div className="mt-5 lg:mt-8">
-            <div className="mb-2 lg:mb-3">
-              <Button
-                href={
-                  process.env.NEXT_PUBLIC_BOOKING_URL
-                    ? process.env.NEXT_PUBLIC_BOOKING_URL
-                    : ""
-                }
-                external
-                style="grey-100"
-              >
-                Book discovery call
-              </Button>
-            </div>
-            <Button style="text" href="/case-studies">
-              Case studies
-            </Button>
-          </div>
         </div>
-        <svg
-          className="absolute left-0 top-9 w-[484px] z-[-1] hidden lg:block wiggle"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 484 361"
-        >
-          <g clipPath="url(#a)">
-            <path
-              stroke="#FAC515"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="120"
-              d="M0 61c52.875 0 52.875 240 105.75 240S158.625 61 211.5 61s52.875 240 105.75 240S423 61 423 61"
-            />
-          </g>
-          <defs>
-            <clipPath id="a">
-              <path fill="#fff" d="M0 0h484v361H0z" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div className="relative">
-        <span className="absolute top-[6rem] left-0 w-full h-[calc(100%-6rem)] bg-grey-10 -z-10 rounded-t-16 lg:rounded-t-30" />
-        <div className="wrapper-x">
-          <HeaderLandingSlider />
-          <LogoCloud variant="Landing" />
+        <div className="mt-5 lg:mt-8">
+          <Button
+            href="#"
+            iconLeft={
+              <span className="inline-block mr-2 text-2xl leading-6 text-white icon-download" />
+            }
+          >
+            <span className="inline-block">Download CV</span>
+          </Button>
+          <span className="block mt-4 text-xs text-center text-grey-70">
+            It&apos;d be rude not too... 👀
+          </span>
         </div>
       </div>
-    </header>
-  )
-}
+    </div>
+    <div className="wrapper-x">
+      <LogoCloud />
+      <HeaderLandingSlider />
+    </div>
+  </header>
+)

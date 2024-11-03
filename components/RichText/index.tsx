@@ -1,3 +1,4 @@
+import React from "react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import {
   BLOCKS,
@@ -56,9 +57,9 @@ export const RichText = ({ content }: Props) => {
           {node.content.map((bullet: ListItem, index) => (
             <li className="relative mt-2 lg:mt-3" key={index}>
               <span className="absolute block w-1.5 h-1.5 rounded-full bg-yellow left-[11px] top-[11px]" />
-              <span key={index} className="pl-8 block">
-                {bullet.content[0].content.map((content) => (
-                  <>
+              <span className="pl-8 block">
+                {bullet.content[0].content.map((content, index) => (
+                  <React.Fragment key={content.nodeType + index}>
                     {content.nodeType === "text" && content.value !== "" && (
                       <>
                         {content.marks.length > 0
@@ -75,7 +76,7 @@ export const RichText = ({ content }: Props) => {
                           content.content[0].value}
                       </a>
                     )}
-                  </>
+                  </React.Fragment>
                 ))}
               </span>
             </li>

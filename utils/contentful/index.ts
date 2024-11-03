@@ -33,33 +33,13 @@ export async function getPageData(pageId: string, preview = false) {
           }
           sectionsCollection(limit: 6) {
             items {
-              ... on PageSectionsAccordions {
+              ... on PageSectionsCaseStudies {
                 __typename
                 sys {
                   id
                 }
                 heading
                 headingHighlight
-                backgroundColour
-                variant
-                accordionsCollection(limit: 10) {
-                  items {
-                    sys {
-                      id
-                    }
-                    emoji
-                    heading
-                    content {
-                      json
-                    }
-                  }
-                }
-              }
-              ... on PageSectionsCaseStudies {
-                __typename
-                sys {
-                  id
-                }
                 backgroundColour
                 caseStudiesCollection(limit: 10) {
                   items {
@@ -107,45 +87,6 @@ export async function getPageData(pageId: string, preview = false) {
                   width
                 }
               }
-              ... on PageSectionsTabs {
-                __typename
-                sys {
-                  id
-                }
-                heading
-                headingHighlight
-                backgroundColour
-                tabsCollection(limit: 2) {
-                  items {
-                    name
-                    image {
-                      height
-                      size
-                      title
-                      url
-                      width
-                    }
-                    imageMobile {
-                      height
-                      size
-                      title
-                      url
-                      width
-                    }
-                  }
-                }
-              }
-              ... on PageSectionsStrap {
-                __typename
-                sys {
-                  id
-                }
-                backgroundColour
-                preHeading
-                heading
-                description
-                button
-              }
               ... on PageSectionsTestimonials {
                 __typename
                 sys {
@@ -184,10 +125,8 @@ export async function getPageData(pageId: string, preview = false) {
           }
           seo {
             title
-            titleExtension {
-              extension
-            }
             description
+            
           }
         }
       }`,
