@@ -90,7 +90,7 @@
 
 @layer components {
   .heading-xl {
-    @apply font-sans font-semibold text-4xl sm:text-[3rem] leading-tight text-grey-100 md:text-[3.5rem] md:leading-tight lg:text-[4.75rem] tracking-[-0.02em];
+    @apply font-sans font-semibold text-4xl sm:text-[3rem] leading-tight text-grey-100 md:text-[3.5rem] md:leading-tight lg:text-[4.75rem] 2xl:text-[5.5rem] tracking-[-0.02em];
   }
   .heading-lg {
     @apply font-sans font-semibold text-[2rem] leading-tight text-grey-100 lg:text-[2.5rem] xl:text-5xl xl:leading-tight tracking-[-0.02em];

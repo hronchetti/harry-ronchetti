@@ -24,7 +24,7 @@ export const RichText = ({ content }: Props) => {
 
     const element: React.ReactNode =
       bold && italic ? (
-        <i className="italic font-semibold text-grey-100">{content.value}</i>
+        <i className="font-semibold italic text-grey-100">{content.value}</i>
       ) : bold ? (
         <b className="font-semibold text-grey-100">{content.value}</b>
       ) : italic ? (
@@ -44,7 +44,7 @@ export const RichText = ({ content }: Props) => {
     renderNode: {
       [INLINES.HYPERLINK]: (node: Hyperlink) => (
         <a
-          className="inline underline break-words hover:no-underline"
+          className="inline break-words underline hover:no-underline"
           href={node.data.uri}
           target="_blank"
           rel="noreferrer"
@@ -53,10 +53,10 @@ export const RichText = ({ content }: Props) => {
         </a>
       ),
       [BLOCKS.UL_LIST]: (node: UnorderedList) => (
-        <ul className="mt-3 mb-4 lg:mb-8 lg:mt-6 last-of-type:mb-0">
+        <ul className="mb-4 mt-3 last-of-type:mb-0 lg:mb-8 lg:mt-6">
           {node.content.map((bullet: ListItem, index) => (
             <li className="relative mt-2 lg:mt-3" key={index}>
-              <span className="absolute block w-1.5 h-1.5 rounded-full bg-yellow left-[11px] top-[11px]" />
+              <span className="absolute left-[11px] top-[11px] block h-1.5 w-1.5 rounded-full bg-yellow" />
               <span className="block pl-8">
                 {bullet.content[0].content.map((content, index) => (
                   <React.Fragment key={content.nodeType + index}>
@@ -69,7 +69,7 @@ export const RichText = ({ content }: Props) => {
                     )}
                     {content.nodeType === "hyperlink" && (
                       <a
-                        className="inline underline break-words hover:no-underline"
+                        className="inline break-words underline hover:no-underline"
                         href={content.data.uri}
                       >
                         {content.content[0].nodeType === "text" &&
@@ -84,7 +84,7 @@ export const RichText = ({ content }: Props) => {
         </ul>
       ),
       [BLOCKS.PARAGRAPH]: (node: Paragraph, children: string[]) => (
-        <p className="mb-3 lg:mb-5 last-of-type:mb-0">{children}</p>
+        <p className="mb-3 last-of-type:mb-0 lg:mb-5">{children}</p>
       ),
     },
   }

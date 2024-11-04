@@ -26,7 +26,7 @@ export const PageSectionCaseStudies = ({
       <div className="wrapper-x" id="work-examples">
         <h2
           className={cx(
-            "heading-md mb-8 lg:mb-10 xl:mb-12 text-center will-change-transform transition-all duration-300 ease-out delay-300",
+            "heading-md mb-8 text-center transition-all delay-300 duration-300 ease-out will-change-transform lg:mb-10 xl:mb-12",
             {
               "translate-y-0 opacity-100": isVisible,
               "translate-y-6 opacity-0": !isVisible,
@@ -40,7 +40,7 @@ export const PageSectionCaseStudies = ({
             isVisible={isVisible}
           />
         </h2>
-        <div className="grid grid-cols-1 gap-8 mt-6 lg:mt-0 lg:gap-12">
+        <div className="mt-6 grid grid-cols-1 gap-8 lg:mt-0 lg:gap-12">
           {caseStudiesCollection.items.map((caseStudy) => (
             <CaseStudyCard
               key={caseStudy.sys.id}

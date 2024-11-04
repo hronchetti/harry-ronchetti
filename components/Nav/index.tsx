@@ -5,12 +5,12 @@ import Link from "next/link"
 import HarryRonchettiHeadshot from "@/lib/harry-ronchetti-headshot.jpeg"
 
 export const Nav = () => (
-  <nav className="sticky top-0 left-0 z-50 w-full bg-white">
-    <div className="flex items-center justify-between lg:grid md:grid-cols-3 p-4 md:px-12 xl:px-24 max-w-[1440px] mx-auto md:py-6">
+  <nav className="sticky left-0 top-0 z-50 w-full bg-white">
+    <div className="mx-auto flex max-w-[1440px] items-center justify-between p-4 md:grid-cols-3 md:px-12 md:py-6 lg:grid xl:px-24">
       <div>
-        <Link href="/" className="flex items-center justify-start w-max">
+        <Link href="/" className="flex w-max items-center justify-start">
           <Image
-            className="block mr-3 overflow-hidden rounded-full w-9 h-9"
+            className="mr-3 block h-9 w-9 overflow-hidden rounded-full"
             src={HarryRonchettiHeadshot}
             alt="Harry Ronchetti Headshot"
           />
@@ -20,7 +20,7 @@ export const Nav = () => (
         </Link>
       </div>
       <div className="hidden lg:block">
-        <span className="block font-medium text-center text-grey-50">
+        <span className="block text-center font-medium text-grey-50">
           Frontend Software Engineer
         </span>
       </div>
@@ -28,34 +28,34 @@ export const Nav = () => (
         <li>
           <a
             aria-label="LinkedIn"
-            className="block mx-2 text-grey-60 hover:text-grey-90"
+            className="mx-2 block text-grey-60 hover:text-grey-90"
             href="https://www.linkedin.com/in/harry-ronchetti/"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="icon-linkedin block leading-7 text-[1.75rem] lg:text-2xl lg:leading-6" />
+            <span className="icon-linkedin block text-[1.75rem] leading-7 lg:text-2xl lg:leading-6" />
           </a>
         </li>
         <li>
           <a
             aria-label="GitHub"
-            className="block mx-2 text-grey-60 hover:text-grey-90"
+            className="mx-2 block text-grey-60 hover:text-grey-90"
             href="https://github.com/hronchetti"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="icon-github block leading-7 text-[1.75rem] lg:text-2xl lg:leading-6" />
+            <span className="icon-github block text-[1.75rem] leading-7 lg:text-2xl lg:leading-6" />
           </a>
         </li>
         <li>
           <a
             aria-label="Medium"
-            className="block mx-2 text-grey-60 hover:text-grey-90"
+            className="mx-2 block text-grey-60 hover:text-grey-90"
             href="https://medium.com/@harryronchetti"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="icon-medium block leading-7 text-[1.75rem] lg:text-2xl lg:leading-6" />
+            <span className="icon-medium block text-[1.75rem] leading-7 lg:text-2xl lg:leading-6" />
           </a>
         </li>
       </ul>

@@ -34,10 +34,10 @@ export const PageSectionTestimonials = ({
     >
       {({ isVisible }) => (
         <div className="wrapper-y">
-          <div className="flex justify-center wrapper-x">
+          <div className="wrapper-x flex justify-center">
             <h2
               className={cx(
-                "mb-8 heading-md lg:mb-10 xl:mb-12 text-center will-change-transform transition-all duration-300 ease-out delay-300",
+                "heading-md mb-8 text-center transition-all delay-300 duration-300 ease-out will-change-transform lg:mb-10 xl:mb-12",
                 `${
                   isVisible
                     ? "translate-y-0 opacity-100"
@@ -55,7 +55,7 @@ export const PageSectionTestimonials = ({
           </div>
           <div
             className={cx(
-              "relative will-change-transform transition-all duration-300 ease-out delay-450 px-6 lg:px-6 xl:px-12 mx-auto",
+              "relative mx-auto px-6 transition-all delay-450 duration-300 ease-out will-change-transform lg:px-6 xl:px-12",
               {
                 "translate-y-0 opacity-100": isVisible,
                 "translate-y-6 opacity-0": !isVisible,
@@ -88,7 +88,7 @@ export const PageSectionTestimonials = ({
               {testimonialsCollection.items.map((testimonial) => (
                 <SwiperSlide
                   key={testimonial.sys.id}
-                  className="p-6 mb-12 text-base border xl:mb-16 sm:p-8 md:p-10 bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
+                  className="mb-12 rounded-3xl border border-grey-20 bg-grey-10 p-6 text-base text-grey-80 sm:p-8 md:p-10 xl:mb-16"
                 >
                   <Testimonial
                     sys={testimonial.sys}
@@ -100,16 +100,16 @@ export const PageSectionTestimonials = ({
               <button
                 ref={navigationPrevRef}
                 aria-label="Previous Testimonial"
-                className="hidden p-3 z-50 border border-grey-20 md:block absolute -left-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-md before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
+                className="absolute -left-6 top-[calc((100%-3rem)/2)] z-50 hidden overflow-hidden rounded-full border border-grey-20 bg-white p-3 drop-shadow-md before:pointer-events-none before:absolute before:-left-1/2 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:bg-grey-40 before:opacity-20 before:transition-all before:duration-300 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[205%] disabled:pointer-events-none disabled:invisible md:block"
               >
-                <span className="block text-2xl leading-6 text-grey-80 icon-arrow-right" />
+                <span className="icon-arrow-right block text-2xl leading-6 text-grey-80" />
               </button>
               <button
                 ref={navigationNextRef}
                 aria-label="Next Testimonial"
-                className="hidden p-3 z-50 md:block border border-grey-20 absolute -right-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-md before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
+                className="absolute -right-6 top-[calc((100%-3rem)/2)] z-50 hidden overflow-hidden rounded-full border border-grey-20 bg-white p-3 drop-shadow-md before:pointer-events-none before:absolute before:-left-1/2 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:bg-grey-40 before:opacity-20 before:transition-all before:duration-300 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[205%] disabled:pointer-events-none disabled:invisible md:block"
               >
-                <span className="block text-2xl leading-6 text-grey-80 icon-arrow-left" />
+                <span className="icon-arrow-left block text-2xl leading-6 text-grey-80" />
               </button>
             </Swiper>
           </div>

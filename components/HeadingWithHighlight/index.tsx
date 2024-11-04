@@ -24,7 +24,7 @@ export const HeadingWithHighlight = ({
         <span className={`inline-block ${padding} relative`}>
           <span>{headingHighlight}</span>
           <span
-            className={`absolute h-full bg-grey-20 ${rounded} left-0 top-0 z-[-1] will-change-transform transition-all duration-300 ease-[cubic-bezier(.22,.68,0,1)] delay-600 ${
+            className={`absolute h-full bg-grey-20 ${rounded} left-0 top-0 z-[-1] transition-all delay-600 duration-300 ease-[cubic-bezier(.22,.68,0,1)] will-change-transform ${
               isVisible ? "w-full" : "w-0"
             }`}
           ></span>

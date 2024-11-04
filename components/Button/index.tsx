@@ -16,13 +16,13 @@ export const Button = ({
   <button
     {...props}
     className={cx(
-      "rounded-lg leading-6 inline-block before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/4 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-700 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[150%] before:rotate-[35deg]",
+      "inline-block rounded-lg leading-6 before:pointer-events-none before:absolute before:-left-1/4 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:opacity-20 before:transition-all before:duration-700 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[150%]",
       {
-        "py-[15px] px-5 flex": iconLeft,
-        "py-[15px] px-6": !iconLeft,
-        "bg-white text-grey-90 border border-grey-20 font-semibold drop-shadow-md overflow-hidden relative before:bg-grey-40":
+        "flex px-5 py-[15px]": iconLeft,
+        "px-6 py-[15px]": !iconLeft,
+        "relative overflow-hidden border border-grey-20 bg-white font-semibold text-grey-90 drop-shadow-md before:bg-grey-40":
           theme === "white",
-        "bg-grey-100 text-white border border-grey-100 font-semibold drop-shadow-md overflow-hidden relative before:bg-white":
+        "relative overflow-hidden border border-grey-100 bg-grey-100 font-semibold text-white drop-shadow-md before:bg-white":
           theme === "grey-100",
       }
     )}
