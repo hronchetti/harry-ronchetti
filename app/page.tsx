@@ -16,7 +16,9 @@ export default async function Home() {
         variant={data.page.header.variant}
       />
       <LogoCloud />
-      <PageSectionStats />
+      <section className="wrapper-x pt-16 sm:pt-20 lg:pt-24">
+        <PageSectionStats />
+      </section>
       <PageSectionsHandler
         sections={data.page.sectionsCollection.items}
         firstSectionRounded={false}
