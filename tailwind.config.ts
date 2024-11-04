@@ -5,6 +5,7 @@ const additionalSizes = {
   13: "3.25rem" /* 52px */,
   15: "3.75rem" /* 60px */,
   18: "4.5rem" /* 72px */,
+  19: "4.75rem" /* 76px */,
   22: "5.5rem" /* 88px */,
   26: "6.5rem" /* 104px */,
   27: "6.75rem" /* 108px */,

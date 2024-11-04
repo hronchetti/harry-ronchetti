@@ -3,10 +3,10 @@
 import React from "react"
 import TrackVisibility from "react-on-screen"
 import cx from "classnames"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 export const PageSectionStats = () => (
-  <section className="wrapper-t wrapper-x">
+  <section className="pt-16 sm:pt-20 lg:pt-24 wrapper-x">
     <TrackVisibility
       tag="section"
       once
@@ -15,7 +15,7 @@ export const PageSectionStats = () => (
     >
       {({ isVisible }) => (
         <React.Fragment>
-          <ul className="grid w-full max-w-5xl gap-8 mb-10 text-center sm:grid-cols-3 xl:gap-30">
+          <ul className="grid w-full max-w-5xl gap-6 sm:gap-8 mb-10 text-center sm:grid-cols-3 xl:gap-30">
             <li
               className={cx(
                 "will-change-transform transition-all duration-300 ease-out delay-300",
@@ -25,7 +25,7 @@ export const PageSectionStats = () => (
                 }
               )}
             >
-              <h3 className="mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
+              <h3 className="mb-1 md:mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
                 18
               </h3>
               <p className="mx-auto text-grey-100 max-w-68">Past projects in software design or development</p>
@@ -39,7 +39,7 @@ export const PageSectionStats = () => (
                 }
               )}
             >
-              <h3 className="mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
+              <h3 className="mb-1 md:mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
                 8+
               </h3>
               <p className="mx-auto text-grey-100 max-w-68">
@@ -55,7 +55,7 @@ export const PageSectionStats = () => (
                 }
               )}
             >
-              <h3 className="mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
+              <h3 className="mb-1 md:mb-2 font-sans font-semibold leading-tight text-grey-100 text-5xl md:leading-tight lg:text-[4rem] tracking-[-0.02em]">
                 6+
               </h3>
               <p className="mx-auto text-grey-100 max-w-68">
@@ -63,7 +63,10 @@ export const PageSectionStats = () => (
               </p>
             </li>
           </ul>
-          <div className="flex justify-center w-full">
+          <div className={cx("flex justify-center w-full will-change-transform transition-all duration-300 ease-out delay-750", {
+                  "translate-y-0 opacity-100": isVisible,
+                  "translate-y-6 opacity-0": !isVisible,
+                })}>
             <Link
               to="work-examples"
               smooth={true}
