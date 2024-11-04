@@ -16,9 +16,9 @@ import { VizzlyLogo } from "../../lib/logos/clients/vizzly"
 import { WilderTripsLogo } from "../../lib/logos/clients/wildertrips"
 
 export const LogoCloud = () => (
-  <section className="mb-6 sm:mb-8 lg:mb-10 xl:mb-12">
+  <section>
     <h2 className="text-xl font-semibold text-center text-grey-100 wrapper-x">
-      8+ years in software
+      Experience at a variety of companies
     </h2>
     <div className="mt-6 overflow-hidden bg-white xl:mt-8 whitespace-nowrap">
       {/* this needs to be exactly 1 width of the screen of exact timing to work, but surely that wouldn't happen unless using flex, justify-between or something? */}

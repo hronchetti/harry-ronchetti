@@ -100,16 +100,16 @@ export const PageSectionTestimonials = ({
               <button
                 ref={navigationPrevRef}
                 aria-label="Previous Testimonial"
-                className="hidden p-3 z-50 md:block absolute -left-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-sm before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
+                className="hidden p-3 z-50 border border-grey-20 md:block absolute -left-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-md before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
               >
-                <span className="block text-2xl leading-6 text-grey-70 icon-arrow-right" />
+                <span className="block text-2xl leading-6 text-grey-80 icon-arrow-right" />
               </button>
               <button
                 ref={navigationNextRef}
                 aria-label="Next Testimonial"
-                className="hidden p-3 z-50 md:block absolute -right-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-sm before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
+                className="hidden p-3 z-50 md:block border border-grey-20 absolute -right-6 top-[calc((100%-3rem)/2)] rounded-full bg-white disabled:invisible disabled:pointer-events-none drop-shadow-md before:content-[''] before:w-12 before:h-40 before:absolute before:-left-1/2 before:-top-6 before:opacity-20 before:pointer-events-none before:block before:z-[-1] before:will-change-auto before:origin-top-right before:duration-300 before:transition-all before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:left-[205%] before:rotate-[35deg] overflow-hidden before:bg-grey-40"
               >
-                <span className="block text-2xl leading-6 text-grey-70 icon-arrow-left" />
+                <span className="block text-2xl leading-6 text-grey-80 icon-arrow-left" />
               </button>
             </Swiper>
           </div>

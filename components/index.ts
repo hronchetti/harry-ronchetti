@@ -1,4 +1,5 @@
 export { Button } from "./Button"
+export { ButtonLink } from "./ButtonLink"
 export { Footer } from "./Footer"
 export { HeaderLanding } from "./HeaderLanding"
 export { HeadingWithHighlight } from "./HeadingWithHighlight"

@@ -1,7 +1,39 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss"
+import defaultTheme from "tailwindcss/defaultTheme"
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+const additionalSizes = {
+  13: "3.25rem" /* 52px */,
+  15: "3.75rem" /* 60px */,
+  18: "4.5rem" /* 72px */,
+  22: "5.5rem" /* 88px */,
+  26: "6.5rem" /* 104px */,
+  27: "6.75rem" /* 108px */,
+  30: "7.5rem" /* 120px */,
+  31: "7.75rem" /* 124px */,
+  34: "8.5rem" /* 136px */,
+  38: "9.5rem" /* 152px */,
+  46: "11.5rem" /* 184px */,
+  50: "12.5rem" /* 200px */,
+  68: "17rem" /* 272px */,
+  70: "17.5rem" /* 280px */,
+  75: "18.75rem" /* 300px */,
+  82: "20.5rem" /* 328px */,
+  92: "23rem" /* 368px */,
+  100: "25rem" /* 400px */,
+  105: "26.25rem" /* 420px */,
+  110: "27.5rem" /* 440px */,
+  112: "28rem" /* 448px */,
+  120: "30rem" /* 480px */,
+  126: "31.5rem" /* 504px */,
+  130: "32.5rem" /* 520px */,
+  150: "37.5rem" /* 600px */,
+  152: "38rem" /* 608px */,
+  158: "39.5rem" /* 632px */,
+  160: "40rem" /* 640px */,
+  180: "45rem" /* 720px */,
+}
+
+const config: Config = {
   content: ["./components/**/*.{html,js,tsx}", "./app/**/*.{html,js,tsx}"],
   theme: {
     extend: {
@@ -60,10 +92,20 @@ module.exports = {
         20: "5rem",
         30: "7.5rem",
       },
-      padding: {
-        30: "7.5rem",
+      margin: additionalSizes,
+      padding: additionalSizes,
+      height: additionalSizes,
+      width: additionalSizes,
+      maxWidth: additionalSizes,
+      minWidth: additionalSizes,
+      maxHeight: additionalSizes,
+      minHeight: additionalSizes,
+      gap: additionalSizes,
+      transitionTimingFunction: {
+        ease: "ease",
       },
     },
   },
   plugins: [],
 }
+export default config

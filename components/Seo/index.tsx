@@ -1,5 +1,4 @@
 import React from "react"
-import dayjs from "dayjs"
 
 import type { Seo as SeoType } from "@/types"
 
@@ -96,13 +95,13 @@ export const Seo = ({
       {article && createdAt && (
         <meta
           property="article:published_time"
-          content={dayjs(createdAt).toISOString()}
+          content={new Date(createdAt).toISOString()}
         />
       )}
       {article && updatedAt && (
         <meta
           property="article:modified_time"
-          content={dayjs(updatedAt).toISOString()}
+          content={new Date(updatedAt).toISOString()}
         />
       )}
       {article && <meta property="article:publisher" content="" />}

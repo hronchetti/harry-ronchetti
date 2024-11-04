@@ -44,7 +44,7 @@ export const CaseStudyCard = ({
             alt={featuredImage.title}
           />
         </div>
-        <div className="order-1 p-6 lg:p-12 xl:p-16 2xl:p-20 rounded-b-8 lg:rounded-br-none lg:rounded-l-16 2xl:rounded-l-20">
+        <div className="order-1 p-6 sm:p-8 md:p-12 lg:p-14 xl:p-16 2xl:p-20 rounded-b-8 lg:rounded-br-none lg:rounded-l-16 2xl:rounded-l-20">
           <span className="block pre-heading">{client.name}</span>
           <h2 className="my-4 capitalize heading-lg lg:my-6">{title}</h2>
           <p className="mb-6 text-base lg:mb-8 md:text-lg">{description}</p>
