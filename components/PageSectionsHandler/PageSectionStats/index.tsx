@@ -77,7 +77,7 @@ export const PageSectionStats = () => (
             to="work-examples"
             smooth={true}
             className={cx(
-              "relative inline-block cursor-pointer overflow-hidden rounded-lg border border-grey-20 bg-white px-5 py-[15px] font-semibold leading-6 text-grey-90 drop-shadow-md before:pointer-events-none before:absolute before:-left-1/4 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:bg-grey-40 before:opacity-20 before:transition-all before:duration-700 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[150%]"
+              "relative flex cursor-pointer overflow-hidden rounded-lg border border-grey-20 bg-white px-5 py-[15px] font-semibold leading-6 text-grey-90 drop-shadow-md before:pointer-events-none before:absolute before:-left-1/4 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:bg-grey-40 before:opacity-20 before:transition-all before:duration-700 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[150%]"
             )}
           >
             <span className="icon-arrow-down mr-2 text-2xl leading-6 text-grey-100" />

@@ -1,8 +1,7 @@
 import React from "react"
 import cx from "classnames"
-import Link, { LinkProps } from "next/link"
 
-interface Button extends LinkProps {
+interface Button extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   theme?: "grey-100" | "white"
   iconLeft?: React.ReactNode
   children: React.ReactNode
@@ -14,10 +13,10 @@ export const ButtonLink = ({
   theme = "grey-100",
   ...props
 }: Button) => (
-  <Link
+  <a
     {...props}
     className={cx(
-      "inline-block rounded-lg leading-6 before:pointer-events-none before:absolute before:-left-1/4 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:opacity-20 before:transition-all before:duration-700 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[150%]",
+      "flex rounded-lg leading-6 before:pointer-events-none before:absolute before:-left-1/4 before:-top-6 before:z-[-1] before:block before:h-40 before:w-12 before:origin-top-right before:rotate-[35deg] before:opacity-20 before:transition-all before:duration-700 before:ease-[cubic-bezier(0.19,1,0.22,1)] before:will-change-auto before:content-[''] hover:before:left-[150%]",
       {
         "flex px-5 py-[15px]": iconLeft,
         "px-6 py-[15px]": !iconLeft,
@@ -30,5 +29,5 @@ export const ButtonLink = ({
   >
     {iconLeft && iconLeft}
     {children}
-  </Link>
+  </a>
 )
