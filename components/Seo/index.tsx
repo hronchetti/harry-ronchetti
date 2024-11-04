@@ -71,7 +71,7 @@ export const Seo = ({
         content={
           socialImage
             ? socialImage.url
-            : process.env.NEXT_PUBLIC_SITE_URL + "/harry-ronchetti-homepage.jpg"
+            : process.env.NEXT_PUBLIC_SITE_URL + "/homepage.png"
         }
       />
       <meta
@@ -79,16 +79,16 @@ export const Seo = ({
         content={
           socialImage
             ? socialImage.url
-            : process.env.NEXT_PUBLIC_SITE_URL + "/harry-ronchetti-homepage.jpg"
+            : process.env.NEXT_PUBLIC_SITE_URL + "/homepage.png"
         }
       />
       <meta
         property="og:image:width"
-        content={socialImage ? socialImage.width.toString() : "1440"}
+        content={socialImage ? socialImage.width.toString() : "1512"}
       />
       <meta
         property="og:image:height"
-        content={socialImage ? socialImage.height.toString() : "960"}
+        content={socialImage ? socialImage.height.toString() : "800"}
       />
       {/* Author */}
       {article && <meta property="og:type" content="article" />}
