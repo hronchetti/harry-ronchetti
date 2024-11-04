@@ -70,23 +70,6 @@ export async function getPageData(pageId: string, preview = false) {
                   }
                 }
               }
-              ... on PageSectionsFullWidthImage {
-                __typename
-                sys {
-                  id
-                }
-                heading
-                headingHighlight
-                description
-                backgroundColour
-                image {
-                  height
-                  size
-                  title
-                  url
-                  width
-                }
-              }
               ... on PageSectionsTestimonials {
                 __typename
                 sys {
@@ -95,7 +78,7 @@ export async function getPageData(pageId: string, preview = false) {
                 backgroundColour
                 heading
                 headingHighlight
-                testimonialsCollection(limit: 10) {
+                testimonialsCollection(limit: 25) {
                   items {
                     sys {
                       id

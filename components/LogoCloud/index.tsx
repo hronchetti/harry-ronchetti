@@ -18,9 +18,10 @@ import { WilderTripsLogo } from "../../lib/logos/clients/wildertrips"
 export const LogoCloud = () => (
   <section className="mb-6 sm:mb-8 lg:mb-10 xl:mb-12">
     <h2 className="text-xl font-semibold text-center text-grey-100 wrapper-x">
-      8+ years in product engineering
+      8+ years in software
     </h2>
     <div className="mt-6 overflow-hidden bg-white xl:mt-8 whitespace-nowrap">
+      {/* this needs to be exactly 1 width of the screen of exact timing to work, but surely that wouldn't happen unless using flex, justify-between or something? */}
       <div id="logos" className="inline-block animate-slide">
         <CleverClinicLogo className="inline-block h-10 mx-4 lg:mx-6" />
         <PFNexusLogo className="inline-block h-10 mx-4 lg:mx-6" />

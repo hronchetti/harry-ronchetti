@@ -88,7 +88,7 @@ export const PageSectionTestimonials = ({
               {testimonialsCollection.items.map((testimonial) => (
                 <SwiperSlide
                   key={testimonial.sys.id}
-                  className="p-6 mb-12 text-base border sm:p-8 md:p-12 bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
+                  className="p-6 mb-12 text-base border xl:mb-16 sm:p-8 md:p-10 bg-grey-10 border-grey-20 rounded-3xl text-grey-80"
                 >
                   <Testimonial
                     sys={testimonial.sys}

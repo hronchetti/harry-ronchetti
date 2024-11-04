@@ -25,7 +25,7 @@ export const CaseStudyCard = ({
     {({ isVisible }) => (
       <a
         className={cx(
-          "block group lg:grid border border-grey-20 rounded-8 lg:rounded-16 2xl:rounded-20 text-grey-100 bg-grey-10 lg:grid-cols-2 will-change-transform transition-all duration-300 ease-out delay-300",
+          "block group lg:grid border border-grey-20 rounded-8 lg:rounded-16 2xl:rounded-20 overflow-hidden text-grey-100 bg-grey-10 lg:grid-cols-2 will-change-transform transition-all duration-300 ease-out delay-300",
           {
             "translate-y-0 opacity-100": isVisible,
             "translate-y-6 opacity-0": !isVisible,
