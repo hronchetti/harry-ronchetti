@@ -47,11 +47,11 @@ export const CaseStudyCard = ({
         <div className="order-1 p-6 lg:p-12 xl:p-16 2xl:p-20 rounded-b-8 lg:rounded-br-none lg:rounded-l-16 2xl:rounded-l-20">
           <span className="block pre-heading">{client.name}</span>
           <h2 className="my-4 capitalize heading-lg lg:my-6">{title}</h2>
-          <p className="mb-6 lg:mb-8">{description}</p>
+          <p className="mb-6 text-base lg:mb-8 md:text-lg">{description}</p>
           <Tags tags={tagsCollection.items} />
-          <span className="flex justify-start pb-2 mt-3 lg:mt-5 2xl:mt-6">
+          <span className="flex items-center justify-start mt-4 lg:mt-5 2xl:mt-6">
             <span className="block pr-2 text-2xl leading-6 transition-all icon-external-link group-hover:pr-3 will-change-auto" />
-            <span className="block font-medium leading-6">
+            <span className="block text-base font-medium leading-6 md:text-lg">
               {getCleanUrl(websiteUrl)}
             </span>
           </span>

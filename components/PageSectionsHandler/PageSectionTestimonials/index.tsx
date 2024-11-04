@@ -37,7 +37,7 @@ export const PageSectionTestimonials = ({
           <div className="flex justify-center wrapper-x">
             <h2
               className={cx(
-                "mb-6 heading-md lg:mb-10 xl:mb-12 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
+                "mb-8 heading-md lg:mb-10 xl:mb-12 md:text-center will-change-transform transition-all duration-300 ease-out delay-300",
                 `${
                   isVisible
                     ? "translate-y-0 opacity-100"
