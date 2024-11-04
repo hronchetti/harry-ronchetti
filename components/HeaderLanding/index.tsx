@@ -23,7 +23,7 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
         <div className="mt-5 lg:mt-8 xl:mt-9">
           <ButtonLink
             target="_blank"
-            href="./CV Harry Ronchetti - Nov 2024.pdf"
+            href="./CV-Harry-Ronchetti-Nov-2024"
             iconLeft={
               <span className="icon-download mr-2 inline-block text-2xl leading-6 text-white" />
             }
