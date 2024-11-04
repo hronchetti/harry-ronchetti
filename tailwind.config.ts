@@ -67,8 +67,8 @@ const config: Config = {
         "grey-50": "#9AA4B2",
         "grey-40": "#CDD5DF",
         "grey-30": "#E3E8EF",
-        "grey-20": "#EEF2F6",
-        "grey-10": "#F8FAFC",
+        "grey-20": "#EBEDF0",
+        "grey-10": "#F7F8FA",
         yellow: "#FAC515",
       },
       transitionDuration: {
