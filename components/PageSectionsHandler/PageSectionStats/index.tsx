@@ -49,7 +49,7 @@ export const PageSectionStats = () => (
           </li>
           <li
             className={cx(
-              "transition-all delay-300 duration-300 ease-out will-change-transform",
+              "transition-all delay-300 duration-600 ease-out will-change-transform",
               {
                 "translate-y-0 opacity-100": isVisible,
                 "translate-y-6 opacity-0": !isVisible,
