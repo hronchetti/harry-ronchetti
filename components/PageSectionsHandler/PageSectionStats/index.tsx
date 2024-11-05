@@ -28,7 +28,7 @@ export const PageSectionStats = () => (
               8+
             </h3>
             <p className="mx-auto max-w-68 text-grey-100">
-              Years experience in software and software as a service
+              Years experience in software and software engineering
             </p>
           </li>
           <li
