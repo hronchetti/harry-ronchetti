@@ -17,22 +17,6 @@ export const PageSectionStats = () => (
         <ul className="mb-10 grid w-full max-w-5xl gap-6 text-center sm:grid-cols-3 sm:gap-8 xl:gap-30">
           <li
             className={cx(
-              "transition-all delay-300 duration-300 ease-out will-change-transform",
-              {
-                "translate-y-0 opacity-100": isVisible,
-                "translate-y-6 opacity-0": !isVisible,
-              }
-            )}
-          >
-            <h3 className="mb-1 font-sans text-5xl font-semibold leading-tight tracking-[-0.02em] text-grey-100 md:mb-2 md:leading-tight lg:text-[4rem]">
-              18
-            </h3>
-            <p className="mx-auto max-w-68 text-grey-100">
-              Projects in software design and development
-            </p>
-          </li>
-          <li
-            className={cx(
               "transition-all delay-450 duration-300 ease-out will-change-transform",
               {
                 "translate-y-0 opacity-100": isVisible,
@@ -61,6 +45,22 @@ export const PageSectionStats = () => (
             </h3>
             <p className="mx-auto max-w-68 text-grey-100">
               Years experience with React.js based technologies
+            </p>
+          </li>
+          <li
+            className={cx(
+              "transition-all delay-300 duration-300 ease-out will-change-transform",
+              {
+                "translate-y-0 opacity-100": isVisible,
+                "translate-y-6 opacity-0": !isVisible,
+              }
+            )}
+          >
+            <h3 className="mb-1 font-sans text-5xl font-semibold leading-tight tracking-[-0.02em] text-grey-100 md:mb-2 md:leading-tight lg:text-[4rem]">
+              4+
+            </h3>
+            <p className="mx-auto max-w-68 text-grey-100">
+              Years experience with TypeScript and Next.js
             </p>
           </li>
         </ul>
