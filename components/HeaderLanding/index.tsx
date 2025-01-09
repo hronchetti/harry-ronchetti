@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { PageSectionsHeader } from "@/types"
 import { ButtonLink } from "@/components"
 
@@ -5,8 +6,16 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
   <header className="w-full text-center">
     <div className="relative overflow-hidden">
       <div className="wrapper-x flex flex-wrap justify-center pb-10 pt-6 md:pb-12 md:pt-12 lg:pb-20 lg:pt-16 xl:pb-24">
-        <span className="mb-5 block rounded-lg border border-grey-20 bg-grey-10 px-2 py-1 text-sm font-medium uppercase tracking-widest text-grey-70 sm:mb-6 xl:mb-7 xl:text-[15px]">
-          Looking for a new role
+        <span className="mb-5 flex items-center justify-center gap-1 rounded-lg border border-grey-20 bg-grey-10 px-2 py-1 text-sm font-medium uppercase leading-5 tracking-widest text-grey-70 sm:mb-6 xl:mb-7 xl:text-[15px]">
+          <span className="block">Now at</span>
+          <Link
+            href="https://polybox.app/"
+            target="_blank"
+            className="flex justify-center gap-0.5"
+          >
+            <span className="block underline">PolyBox</span>
+            <span className="icon-external-link block text-xl leading-5 text-grey-70" />
+          </Link>
         </span>
         <div className="flex w-full justify-center">
           <h1 className="heading-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
