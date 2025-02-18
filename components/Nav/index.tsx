@@ -21,7 +21,7 @@ export const Nav = () => (
       </div>
       <div className="hidden lg:block">
         <span className="block text-center font-medium text-grey-50">
-          Frontend Software Engineer
+          Senior Product Engineer
         </span>
       </div>
       <ul className="flex justify-center lg:justify-end">
