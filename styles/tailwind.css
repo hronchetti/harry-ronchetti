@@ -42,11 +42,11 @@
   }
 
   *:focus-visible {
-    @apply outline-yellow outline-2 outline;
+    @apply outline outline-2 outline-yellow;
   }
 
   *::-moz-focus-inner {
-    @apply p-0 border-0;
+    @apply border-0 p-0;
   }
 
   .fadeIn {
@@ -75,7 +75,7 @@
     backface-visibility: hidden;
   }
   .wrapper-x {
-    @apply px-6 md:px-12 xl:px-24 max-w-[1440px] mx-auto;
+    @apply mx-auto max-w-[1440px] px-6 md:px-12 xl:px-24;
   }
   .wrapper-y {
     @apply py-20 lg:py-30;
@@ -90,21 +90,21 @@
 
 @layer components {
   .heading-xl {
-    @apply font-sans font-semibold text-4xl sm:text-[3rem] leading-tight text-grey-100 md:text-[3.5rem] md:leading-tight lg:text-[4.75rem] 2xl:text-[5.5rem] tracking-[-0.02em];
+    @apply font-sans text-[2.75rem] font-semibold leading-tight tracking-[-0.02em] text-grey-100 sm:text-5xl md:text-[3.5rem] md:leading-tight lg:text-[4.75rem] 2xl:text-[5.5rem];
   }
   .heading-lg {
-    @apply font-sans font-semibold text-[2rem] leading-tight text-grey-100 lg:text-[2.5rem] xl:text-5xl xl:leading-tight tracking-[-0.02em];
+    @apply font-sans text-[2rem] font-semibold leading-tight tracking-[-0.02em] text-grey-100 lg:text-[2.5rem] xl:text-5xl xl:leading-tight;
   }
   .heading-md {
-    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2.5rem] lg:leading-[3rem] tracking-[-0.02em];
+    @apply font-sans text-[1.75rem] font-semibold leading-tight tracking-[-0.02em] text-grey-100 lg:text-[2.5rem] lg:leading-[3rem];
   }
   .heading-sm {
-    @apply font-sans font-semibold text-[1.75rem] leading-tight text-grey-100 lg:text-[2rem] tracking-[-0.02em];
+    @apply font-sans text-[1.75rem] font-semibold leading-tight tracking-[-0.02em] text-grey-100 lg:text-[2rem];
   }
   .heading-xs {
-    @apply font-sans font-semibold text-[1.375rem] leading-tight text-grey-100 lg:text-2xl tracking-[-0.02em];
+    @apply font-sans text-[1.375rem] font-semibold leading-tight tracking-[-0.02em] text-grey-100 lg:text-2xl;
   }
   .pre-heading {
-    @apply font-sans font-medium text-base leading-5 tracking-[0.06em] uppercase;
+    @apply font-sans text-base font-medium uppercase leading-5 tracking-[0.06em];
   }
 }

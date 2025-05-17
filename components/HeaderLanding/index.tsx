@@ -7,7 +7,7 @@ export const HeaderLanding = ({ heading, description }: PageSectionsHeader) => (
     <div className="relative overflow-hidden">
       <div className="wrapper-x flex flex-wrap justify-center pb-10 pt-6 md:pb-12 md:pt-12 lg:pb-20 lg:pt-16 xl:pb-24">
         <span className="mb-5 flex items-center justify-center gap-1 rounded-lg border border-grey-20 bg-grey-10 px-2 py-1 text-sm font-medium uppercase leading-5 tracking-widest text-grey-70 sm:mb-6 xl:mb-7 xl:text-[15px]">
-          <span className="block">Now at</span>
+          <span className="block">Tech lead at</span>
           <Link
             href="https://polybox.app/"
             target="_blank"
