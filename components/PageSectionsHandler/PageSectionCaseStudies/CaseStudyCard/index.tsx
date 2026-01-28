@@ -45,7 +45,14 @@ export const CaseStudyCard = ({
           />
         </div>
         <div className="order-1 rounded-b-8 p-6 sm:p-8 md:p-12 lg:rounded-l-16 lg:rounded-br-none lg:p-14 xl:p-16 2xl:rounded-l-20 2xl:p-20">
-          <span className="pre-heading block">{client.name}</span>
+          <span className="pre-heading flex items-center justify-start gap-2">
+            {client.name}
+            {client.label && (
+              <span className="text-grey-95 inline-block rounded-lg bg-yellow p-1 px-1.5 font-medium leading-5">
+                {client.label}
+              </span>
+            )}
+          </span>
           <h2 className="heading-lg my-4 capitalize lg:my-6">{title}</h2>
           <p className="mb-6 text-base md:text-lg lg:mb-8">{description}</p>
           <Tags tags={tagsCollection.items} />
