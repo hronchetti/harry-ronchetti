@@ -48,7 +48,7 @@ export const CaseStudyCard = ({
           <span className="pre-heading flex items-center justify-start gap-2">
             {client.name}
             {client.label && (
-              <span className="inline-block rounded-lg bg-green-300 p-1 px-1.5 font-medium leading-5 text-green-900">
+              <span className="inline-block rounded-lg bg-green-300 p-1 px-1.5 font-medium leading-5 text-green-950">
                 {client.label}
               </span>
             )}
