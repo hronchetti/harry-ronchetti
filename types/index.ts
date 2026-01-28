@@ -44,6 +44,7 @@ export type Accordion = {
 
 export type Client = {
   name: string
+  label: string
 }
 
 export type ClientPersonel = {

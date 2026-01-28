@@ -11,7 +11,7 @@ export async function fetchGraphQL(query: any, preview = false) {
             : process.env.CONTENTFUL_ACCESS_TOKEN
         }`,
       },
-      cache: preview ? 'no-store' : 'force-cache',
+      cache: preview ? "no-store" : "force-cache",
       body: JSON.stringify({ query }),
     }
   )
@@ -49,6 +49,7 @@ export async function getPageData(pageId: string, preview = false) {
                     }
                     client {
                       name
+                      label
                     }
                     title
                     description
