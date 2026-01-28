@@ -11,7 +11,7 @@ export async function fetchGraphQL(query: any, preview = false) {
             : process.env.CONTENTFUL_ACCESS_TOKEN
         }`,
       },
-      cache: 'force-cache',
+      cache: preview ? 'no-store' : 'force-cache',
       body: JSON.stringify({ query }),
     }
   )
