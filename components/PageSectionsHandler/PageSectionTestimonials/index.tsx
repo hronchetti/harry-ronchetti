@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-import SwiperCore from "swiper"
 import { Pagination, Navigation, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import TrackVisibility from "react-on-screen"
@@ -11,8 +10,6 @@ import { PageSectionsTestimonials } from "@/types"
 
 import { Testimonial } from "./Testimonial"
 import { HeadingWithHighlight } from "@/components"
-
-SwiperCore.use([Pagination, Navigation])
 
 export const PageSectionTestimonials = ({
   heading,
