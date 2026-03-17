@@ -25,7 +25,7 @@ export const PageSectionStats = () => (
             )}
           >
             <h3 className="mb-1 font-sans text-5xl font-semibold leading-tight tracking-[-0.02em] text-grey-100 md:mb-2 md:leading-tight lg:text-[4rem]">
-              8+
+              10+
             </h3>
             <p className="mx-auto max-w-68 text-grey-100">
               Years experience in software engineering and design
@@ -41,7 +41,7 @@ export const PageSectionStats = () => (
             )}
           >
             <h3 className="mb-1 font-sans text-5xl font-semibold leading-tight tracking-[-0.02em] text-grey-100 md:mb-2 md:leading-tight lg:text-[4rem]">
-              6+
+              8+
             </h3>
             <p className="mx-auto max-w-68 text-grey-100">
               Years experience with React.js based technologies
@@ -57,7 +57,7 @@ export const PageSectionStats = () => (
             )}
           >
             <h3 className="mb-1 font-sans text-5xl font-semibold leading-tight tracking-[-0.02em] text-grey-100 md:mb-2 md:leading-tight lg:text-[4rem]">
-              5+
+              7+
             </h3>
             <p className="mx-auto max-w-68 text-grey-100">
               Years experience with TypeScript and Next.js
